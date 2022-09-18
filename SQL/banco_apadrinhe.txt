@@ -1,0 +1,98 @@
+create database apadrinhe;
+use apadrinhe;
+create table administrador(
+	id_adm integer auto_increment primary key not null,
+    nome_adm varchar(150),
+    email_adm  varchar(50),
+    senha_adm varchar(30),
+    tipo_acesso varchar(15)
+);
+
+
+
+create table apadrinhadores(
+	id_pessoa integer auto_increment primary key not null,
+    nome_pessoa varchar(250) not null,
+    cpf_pessoa varchar(11) not null,
+    email_pessoa varchar(30) not null,
+    senha_pessoa varchar(30),
+    numero_cartao varchar(16),
+    codigo_seguranca varchar(3)
+);
+
+
+create table ongs(
+	id_ong integer auto_increment primary key not null,
+    nome_ong varchar(100) not null,
+    cnpj_ong varchar(20) not null,
+    email_ong varchar(50) not null,
+    senha_ong varchar(30),
+    codigo_banco_ong varchar(4),
+    agencia_ong varchar(6),
+    conta_corrente_ong varchar(10)
+);
+
+
+
+create table animais(
+	id_animal integer auto_increment primary key not null,
+    id_ong integer not null,
+    nome_pet varchar(100) not null,
+    resumo_pet text,
+    foto_pet varchar(255),
+    constraint ong_animais foreign key
+		(id_ong) references ongs(id_ong)
+);
+
+
+
+
+create table apadrinhamento(
+	id_apadrinhamento integer auto_increment primary key not null,
+	id_animal integer not null,
+	id_ong integer not null,
+	id_pessoa integer not null,
+	data_apadrinhamento date,
+	valor double,
+	forma_apagamento varchar(20) not null,
+    tipo_transacao varchar(1),
+	status_transacao varchar(1),
+	constraint ap_animal foreign key
+		(id_animal) references animais(id_animal),
+	constraint ap_ong foreign key
+		(id_ong) references ongs(id_ong),
+	constraint ap_pessoa foreign key
+		(id_pessoa) references apadrinhadores(id_pessoa)
+);
+
+
+
+insert into administrador values (null, "Cravo & Canela Consultoria", "administracao@cravocanela.com.br", "cravocanela","administrador");
+
+insert into apadrinhadores values
+(null,"Ada Lovelace", "36636470054", "ada@lovelace.com.br", "algoritmos",null,null),
+(null,"Marie Curie", "41560866071", "curiemary.1867@gmail.com", "isotopos",null,null),
+(null,"Nise da Silveira", "21338218050", "nise1905silveira@gmail.com", "saude",null,null);
+
+
+insert into ongs values
+(null, "Clube Animal", "87233922000127","administracao@clubeanimal.com.br", "petPET123","001","1111","11111"),
+(null, "Pet Amor", "55160118000179","adm@petamor.com.br", "petamo123","160","1221","9874"),
+(null, "Gatomania", "85250780000180","administracao@gatomania.com.br", "Miau6987","040","4321","2564"),
+(null, "ColaboraCÃO", "01082791000109","adm@colaboracao.com.br", "AuAu8745","033","664","9822");
+
+
+
+insert into animais values
+(null,1,"Floquinho", "xxxxxxxxxxx",""),
+(null,2,"Garfield", "lasanha, comida .....",""),
+(null,3,"Mingau", "miau miau miau miau",""),
+(null,4,"Snoop", "au au au","");
+
+
+
+insert into apadrinhamento values
+(null,1,1,2,"2022-08-31",175.0,"Cartão de Crédito","U","F"),
+(null,2,2,3,"2022-09-17",50.0,"Depósito","U","A"),
+(null,3,3,2,"2022-08-24",300.0,"Cartão de Crédito","R","F"),
+(null,4,4,1,"2022-08-31",60.0,"Pix","U","F");
