@@ -45,7 +45,7 @@ public class ApadrinhadoresController {
     }
 
     @DeleteMapping("/apadrinhadores/{id}")
-    public ResponseEntity<Apadrinhadores> excluirDepartamento(@PathVariable Integer id) {
+    public ResponseEntity<Apadrinhadores> excluirApadrinhadores(@PathVariable Integer id) {
         service.excluirApadrinhadores(id);
         return ResponseEntity.ok(null);
     }
