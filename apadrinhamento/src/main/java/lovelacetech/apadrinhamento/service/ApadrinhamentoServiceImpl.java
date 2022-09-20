@@ -34,7 +34,7 @@ public class ApadrinhamentoServiceImpl implements IApadrinhamentoService{
 
 	@Override
 	public ArrayList<Apadrinhamento> buscarTodos() {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub	
 	
 		return (ArrayList<Apadrinhamento>)dao.findAll();
 	}
@@ -42,25 +42,8 @@ public class ApadrinhamentoServiceImpl implements IApadrinhamentoService{
 	@Override
 	public Apadrinhamento buscarPeloId(Integer id) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Apadrinhamento buscarPeloIdOng(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Apadrinhamento buscarPeloIdAnimal(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Apadrinhamento buscarPeloIdPessoa(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return dao.findById(id).orElse(null);
 	}
 
 	@Override

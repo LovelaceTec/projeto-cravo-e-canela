@@ -77,11 +77,11 @@ public class Apadrinhamento {
 		this.id_pessoa = id_pessoa;
 	}
 
-	public Date getData_apadrinhamento() {
+	public LocalDate getData_apadrinhamento() {
 		return data_apadrinhamento;
 	}
 
-	public void setData_apadrinhamento(Date data_apadrinhamento) {
+	public void setData_apadrinhamento(LocalDate data_apadrinhamento) {
 		this.data_apadrinhamento = data_apadrinhamento;
 	}
 
