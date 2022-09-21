@@ -3,28 +3,29 @@
 
 <br> 
 
-Status do projeto
+Status do projeto: 
 🚧 Em construção ... 🚧
 
 Previsão de conclusão: 29/09/2022 
+ <br/>
 Apresentação: 30/09/2022
 
-<br> 
+<br>  <br/>
 
 #### Sumário
 
   - [ONGs Projeto Cravo&Canela](#ongs-projeto-cravo&canela)
   - [Layout](#layout)
-  - [Publicação](#publicacao)
+  - [Publicacao](#publicacao)
   - [O projeto](#o-projeto)
   - [Requisitos do projeto](#resuisitos-do-projeto)  
-  - [Instalação](#instalacao)
-  - [Documentação do banco de dados](#documentacao-do-banco-de-dados)
-  - [Documentação da API Swegger](#documentacao-da-api-swegger)
-  - [Documentação Frontend](#documentacao-frontend)
+  - [Instalacao](#instalacao)
+  - [Documentacao do banco de dados](#documentacao-do-banco-de-dados)
+  - [Documentacao da API Swegger](#documentacao-da-api-swegger)
+  - [Documentacao Frontend](#documentacao-frontend)
   - [Arquitetura do projeto](#arquitetura-do-projeto) 
   - [Agradecimentos](#agradecimentos)
-  - [Créditos](#creditos)
+  - [Creditos](#creditos)
   - [Contatos](#contatos)
   
  <br> 
@@ -39,13 +40,13 @@ Apresentação: 30/09/2022
 
  <br/>
 
-  - [Figma](https://www.figma.com/file/5Bh3kQpsM3wOOJjP7bu370/Projeto-Consultoria-Cravo-%26-Canela?node-id=27%3A387) - Online prototyping tool
+  - [Figma](https://www.figma.com/file/5Bh3kQpsM3wOOJjP7bu370/Projeto-Consultoria-Cravo-%26-Canela?node-id=27%3A387) 
 
 <br/>
 
 <br> 
  
-#### Publicação
+#### Publicacao
 
 <br> 
  
@@ -58,19 +59,19 @@ Apresentação: 30/09/2022
 
 <br>
  
-#### Instalação
+#### Instalacao
 
 <br>
  
-#### Documentação do banco de dados
+#### Documentacao do banco de dados
 
 <br>
  
-#### Documentação da API Swegger
+#### Documentacao da API Swegger
 
 <br>
  
-#### Documentação Frontend
+#### Documentacao Frontend
 
 <br>
  
@@ -82,7 +83,7 @@ Apresentação: 30/09/2022
 
 <br>
  
-#### Créditos
+#### Creditos
 
 <br> 
  
