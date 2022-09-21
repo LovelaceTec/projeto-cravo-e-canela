@@ -1,11 +1,17 @@
 package lovelacetech.apadrinhamento.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name="ongs")
@@ -36,6 +42,10 @@ public class Ong {
 	
 	@Column(name="conta_corrente_ong", length = 10, nullable = true)
 	private String conta_corrente_ong;
+
+	@OneToMany(mappedBy = "id_animal", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("animais")
+	private List<Animais> listaAnimais;
 
 	public Integer getId_ong() {
 		return id_ong;
@@ -100,6 +110,13 @@ public class Ong {
 	public void setConta_corrente_ong(String conta_corrente_ong) {
 		this.conta_corrente_ong = conta_corrente_ong;
 	}
-	
+
+	public List<Animais> getListaAnimais() {
+		return listaAnimais;
+	}
+
+	public void setListaAnimais(List<Animais> listaAnimais) {
+		this.listaAnimais = listaAnimais;
+	}
 	
 }

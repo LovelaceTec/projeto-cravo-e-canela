@@ -17,7 +17,7 @@ public class ApadrinhamentoServiceImpl implements IApadrinhamentoService{
 	@Override
 	public Apadrinhamento criarNovo(Apadrinhamento novo) {
 		// TODO Auto-generated method stub
-		if(novo.getId_ong() != null && novo.getId_animal() != null) {
+		if(novo.getOng() != null && novo.getAnimal() != null) {
 			return dao.save(novo);
 		}
 		return null;

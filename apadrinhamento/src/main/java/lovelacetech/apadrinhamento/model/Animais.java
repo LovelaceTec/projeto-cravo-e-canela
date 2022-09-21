@@ -31,32 +31,40 @@ public class Animais {
     public Integer getId_animal() {
         return id_animal;
     }
+
     public void setId_animal(Integer id_animal) {
         this.id_animal = id_animal;
     }
+
     public Integer getId_ong() {
         return id_ong;
     }
+
     public void setId_ong(Integer id_ong) {
         this.id_ong = id_ong;
     }
+
     public String getNome_pet() {
         return nome_pet;
     }
+
     public void setNome_pet(String nome_pet) {
         this.nome_pet = nome_pet;
     }
+
     public String getResumo_pet() {
         return resumo_pet;
     }
+
     public void setResumo_pet(String resumo_pet) {
         this.resumo_pet = resumo_pet;
     }
+
     public String getFoto_pet() {
         return foto_pet;
     }
+
     public void setFoto_pet(String foto_pet) {
         this.foto_pet = foto_pet;
     }
-    
 }

@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import lovelacetech.apadrinhamento.model.Apadrinhadores;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 import lovelacetech.apadrinhamento.service.IApadrinhamentoService;
 
@@ -24,9 +23,7 @@ public class ApadrinhamentoController {
 	
 	@GetMapping("/apadrinhamento")
 	public ArrayList<Apadrinhamento> recuperTodos(){
-		
 		return service.buscarTodos();
-		
 	}
 	
 	@PostMapping("/apadrinhamento")
