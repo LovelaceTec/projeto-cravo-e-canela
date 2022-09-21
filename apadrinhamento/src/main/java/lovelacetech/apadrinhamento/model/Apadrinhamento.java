@@ -1,13 +1,14 @@
 package lovelacetech.apadrinhamento.model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -21,17 +22,20 @@ public class Apadrinhamento {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id_apadrinhamento;
 	
+	@ManyToOne
+	@JoinColumn(name="id_animal")
+	private Animais animal;
 	
-	private Integer id_animal;
+	@ManyToOne
+	@JoinColumn(name="id_ong")
+	private Ong ong;
 	
+	@ManyToOne
+	@JoinColumn(name="id_pessoa")
+	private Apadrinhadores pessoa;
 	
-	private Integer id_ong;
-	
-	
-	private Integer id_pessoa;
-	
-	@Column(name="data_apadrinhamento")
-	private LocalDate data_apadrinhamento;
+	@DateTimeFormat(pattern="dd/MM/YYYY")
+	private LocalDate data_apadrinhamento = LocalDate.now();
 	
 	@Column(name="valor", nullable=true)
 	private Double valor;
@@ -53,28 +57,28 @@ public class Apadrinhamento {
 		this.id_apadrinhamento = id_apadrinhamento;
 	}
 
-	public Integer getId_animal() {
-		return id_animal;
+	public Animais getAnimal() {
+		return animal;
 	}
 
-	public void setId_animal(Integer id_animal) {
-		this.id_animal = id_animal;
+	public void setAnimal(Animais animal) {
+		this.animal = animal;
 	}
 
-	public Integer getId_ong() {
-		return id_ong;
+	public Ong getOng() {
+		return ong;
 	}
 
-	public void setId_ong(Integer id_ong) {
-		this.id_ong = id_ong;
+	public void setOng(Ong ong) {
+		this.ong = ong;
 	}
 
-	public Integer getId_pessoa() {
-		return id_pessoa;
+	public Apadrinhadores getPessoa() {
+		return pessoa;
 	}
 
-	public void setId_pessoa(Integer id_pessoa) {
-		this.id_pessoa = id_pessoa;
+	public void setPessoa(Apadrinhadores pessoa) {
+		this.pessoa = pessoa;
 	}
 
 	public LocalDate getData_apadrinhamento() {
@@ -116,6 +120,4 @@ public class Apadrinhamento {
 	public void setStatus_transacao(String status_transacao) {
 		this.status_transacao = status_transacao;
 	}
-
-
 }
