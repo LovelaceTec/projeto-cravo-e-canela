@@ -67,4 +67,5 @@ public class Animais {
     public void setFoto_pet(String foto_pet) {
         this.foto_pet = foto_pet;
     }
+        
 }

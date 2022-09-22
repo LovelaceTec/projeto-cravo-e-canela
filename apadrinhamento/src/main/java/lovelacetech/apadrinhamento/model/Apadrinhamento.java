@@ -40,12 +40,6 @@ public class Apadrinhamento {
 	@Column(name="valor", nullable=true)
 	private Double valor;
 	
-	@Column(name="forma_apagamento", length = 20 , nullable=false)
-	private String forma_apagamento;
-	
-	@Column(name="tipo_transacao", length = 1, nullable=true)
-	private String tipo_transacao;
-	
 	@Column(name="status_transacao", length = 1, nullable = true)
 	private String status_transacao;
 
@@ -95,22 +89,6 @@ public class Apadrinhamento {
 
 	public void setValor(Double valor) {
 		this.valor = valor;
-	}
-
-	public String getForma_apagamento() {
-		return forma_apagamento;
-	}
-
-	public void setForma_apagamento(String forma_apagamento) {
-		this.forma_apagamento = forma_apagamento;
-	}
-
-	public String getTipo_transacao() {
-		return tipo_transacao;
-	}
-
-	public void setTipo_transacao(String tipo_transacao) {
-		this.tipo_transacao = tipo_transacao;
 	}
 
 	public String getStatus_transacao() {
