@@ -40,7 +40,7 @@ public class Apadrinhamento {
 	@Column(name="valor", nullable=true)
 	private Double valor;
 	
-	@Column(name="status_transacao", length = 1, nullable = true)
+	@Column(name="status_transacao", length = 10, nullable = true)
 	private String status_transacao;
 
 	public Integer getId_apadrinhamento() {
@@ -98,4 +98,8 @@ public class Apadrinhamento {
 	public void setStatus_transacao(String status_transacao) {
 		this.status_transacao = status_transacao;
 	}
+
+	
+
+	
 }

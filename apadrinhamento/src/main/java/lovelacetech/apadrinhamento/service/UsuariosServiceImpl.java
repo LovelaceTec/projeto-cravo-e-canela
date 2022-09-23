@@ -17,7 +17,7 @@ public class UsuariosServiceImpl implements IUsuariosService{
     @Override
     public Usuarios criarNovo(Usuarios novo) {
         // TODO Auto-generated method stub
-        if(novo.getEmail_usuario() != null) {
+        if(novo.getNome_usuario() != null) {
             return dao.save(novo);
         }
         return null;

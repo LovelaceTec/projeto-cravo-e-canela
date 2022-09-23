@@ -1,5 +1,5 @@
 -- Para apagar o banco anterior e criar com essa versão, retire os dois traços 
--- drop database apadrinhe;
+drop database apadrinhe;
 create database apadrinhe;
 use apadrinhe;
 

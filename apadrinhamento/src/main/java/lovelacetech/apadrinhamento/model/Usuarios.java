@@ -16,10 +16,10 @@ public class Usuarios {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id_usuario;
 
-    @Column(name="email_usuario", length=50, nullable=false)
-    private String email_usuario;
+    @Column(name="nome_usuario", length=50, nullable=false)
+    private String nome_usuario;
 
-    @Column(name="senha_usuario", length=30, nullable=false)
+    @Column(name="senha_usuario", length=30, nullable=true)
     private String senha_usuario;
 
     public Integer getId_usuario() {
@@ -30,12 +30,12 @@ public class Usuarios {
         this.id_usuario = id_usuario;
     }
 
-    public String getEmail_usuario() {
-        return email_usuario;
+    public String getNome_usuario() {
+        return nome_usuario;
     }
 
-    public void setEmail_usuario(String email_usuario) {
-        this.email_usuario = email_usuario;
+    public void setNome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
     }
 
     public String getSenha_usuario() {
@@ -45,4 +45,7 @@ public class Usuarios {
     public void setSenha_usuario(String senha_usuario) {
         this.senha_usuario = senha_usuario;
     }
+
+    
+    
 }
