@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <script src="./js/transition.js" defer></script>
+    <title>LoginOng</title>
+</head>
+<body>
+    <main>
+        <div class="login-container" id="login-container">
+            <div class="form-container">
+                <form action="@" class="form form-login">
+                    <h2 class="form-title">Login</h2>
+                    <div class="form-input-container">
+                        <input type="email" name="email" class="form-input" placeholder="Email">
+                        <input type="password" name="senha" class="form-input"  placeholder="Senha">
+                    </div>
+                    <a href="#" class="form-link">Esqueceu a senha?</a>
+                    <button class="form-button">Entrar</button>
+                    <p class="mobile-text">Ainda não é cadastrado? <a href="#" id="open-register-mobile">Cadastrar</a>
+                    </p>
+                </form>
+
+                <form action="@" class="form form-register">
+                    <h2 class="form-title">Cadastro</h2>
+                    <div class="form-input-container">
+                        <input type="text"  name="text"  class="form-input" placeholder="Razão Social">
+                        <input type="email" name="email" class="form-input"  placeholder="Email">
+                        <input type="text" name="cnpj" class="form-input"  placeholder="CNPJ">
+                        <input type="password" class="form-input"  placeholder="Senha">
+                    </div>
+                    <a href="#" class="form-link">Já possui conta?</a>
+                    <button class="form-button">Cadastrar</button>
+                    <p class="mobile-text">Já é cadastrado? <a href="#" id="open-login-mobile">Login</a>
+                    </p>
+                </form>
+            </div> 
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <h2 class="form-title form-title-ligth">Já tem conta?</h2>                    
+                    <p class="form-text form-title-ligth">Efetue o login em nossa plataforma para acompanhar sua campanha.</p>
+                    <button type="submit"  class="form-button form-button-ligth"  id="open-login">Entrar</button>
+                </div>
+
+                <div class="overlay">
+                    <h2 class="form-title form-title-ligth">Bem vindo, Ong!</h2>
+                    <p class="form-text">Ainda não é cadastrado? Cadastre-se para divulgar sua campanha.</p>
+                    <button type="submit" 
+                    class="form-button form-button-ligth" id="open-register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
