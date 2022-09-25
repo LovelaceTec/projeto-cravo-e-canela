@@ -1,42 +1,56 @@
 const formUser = document.getElementById("FormRegister");
 const formLogin = document.getElementById("FormLogin");
 
-
 formUser.onsubmit = function (e) {
   e.preventDefault();
- 
-
-  fetch("http://localhost:8080/usuarios", {
-    method: "POST",
-    mode: "cors", // no-cors, *cors, same-origin
+  fetch("http://localhost:8080/apadrinhadores", {
+    method: "GET",
     headers: {
-      "Content-Type": "application/json",
+      Accept: "application/json",
     },
-
-    body: JSON.stringify({
-      nome_usuario: e.target.email.value,
-      senha_usuario: e.target.senha.value,
-    }),
   })
     .then((response) => response.json())
-    .then((data) => {
-      fetch("http://localhost:8080/apadrinhadores", {
-        method: "POST",       
-        headers: {
-          "Content-Type": "application/json",
-        },
-       
-        body: JSON.stringify({
-          nome_pessoa: e.target.nome.value,
-          email_apadrinhador: e.target.email.value,
-          cpf_pessoa: e.target.cpf.value.match(/\d/g).join(""),
-          usuario: data,
-         
-        }),
-      }).then((data) => {
-        alert("Usuário cadastrado com sucesso");
-        window.location.href = 'loginOng.html';
+    .then((dataApadrinhadores) => {
+      const apadrinhadores = dataApadrinhadores.filter((apadrinhador) => {
+        return apadrinhador.cpf_pessoa === e.target.cpf.value;
       });
+      console.log(apadrinhadores)
+      
+      if (apadrinhadores.length > 0) {
+        alert("Cadastro já existe");
+      } else {
+        fetch("http://localhost:8080/usuarios", {
+          method: "POST",
+          mode: "cors", // no-cors, *cors, same-origin
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify({
+            nome_usuario: e.target.email.value,
+            senha_usuario: e.target.senha.value,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            fetch("http://localhost:8080/apadrinhadores", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+
+              body: JSON.stringify({
+                nome_pessoa: e.target.nome.value,
+                email_apadrinhador: e.target.email.value,
+                cpf_pessoa: e.target.cpf.value.match(/\d/g).join(""),
+                usuario: data,
+              }),
+            }).then((data) => {
+              alert("Usuário cadastrado com sucesso");
+         
+            });
+          });
+      }
     });
 };
 
@@ -77,10 +91,12 @@ formLogin.onsubmit = function (e) {
               alert("Este usuário não pode logar como apadrinhador");
             } else if (apadrinhadores.length > 1) {
               alert("Ocorreu um erro, contate um administrador");
-            }else{
-              localStorage.setItem("nome_apadrinhador",apadrinhadores[0].nome_pessoa);
-              window.location.href = 'padrinho.html';
-              
+            } else {
+              localStorage.setItem(
+                "nome_apadrinhador",
+                apadrinhadores[0].nome_pessoa
+              );
+              window.location.href = "padrinho.html";
             }
           });
       }

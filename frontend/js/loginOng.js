@@ -47,6 +47,7 @@ formCadastro.onsubmit = function (e) {
               }),
             }).then((data) => {
               alert("usuário cadastrado com sucesso!");
+              window.location.href = "ong.html";
             });
           });
       }
@@ -92,8 +93,7 @@ formLogin.onsubmit = function (e) {
             } else if (ongs.length > 1) {
               alert("Ocorreu um erro, contate o administrador");
             } else {
-              localStorage.setItem("nome_ong", ongs[0].nome_ong);
-              window.location.href = "ong.html";
+                 window.location.href = "ong.html";
             }
           });
       }
