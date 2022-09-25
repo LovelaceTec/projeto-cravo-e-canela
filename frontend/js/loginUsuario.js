@@ -4,7 +4,7 @@ const formLogin = document.getElementById("FormLogin");
 
 formUser.onsubmit = function (e) {
   e.preventDefault();
-  const cpf_cadastro = 
+ 
 
   fetch("http://localhost:8080/usuarios", {
     method: "POST",
@@ -35,7 +35,7 @@ formUser.onsubmit = function (e) {
         }),
       }).then((data) => {
         alert("Usuário cadastrado com sucesso");
-        window.location.href = 'loginUsuario.html';
+        window.location.href = 'loginOng.html';
       });
     });
 };
@@ -58,7 +58,7 @@ formLogin.onsubmit = function (e) {
       });
 
       if (usuarios.length === 0) {
-        alert("Usuário ou senha inválido");
+        alert("Usuário ou senha inválidos");
       } else if (usuarios.length > 1) {
         alert("Ocorreu um erro, contate um administrador");
       } else {

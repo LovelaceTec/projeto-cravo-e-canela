@@ -1,4 +1,6 @@
-const saudacao = document.getElementById('padrinho');
+const saudacaoPadrinho = document.getElementById('padrinho');
+const saudacaoONG = document.getElementById('ong');
 
 console.log(saudacao)
-saudacao.innerHTML=`Seja Bem vindo(a) ${localStorage.getItem('nome_apadrinhador')}`
+saudacaoPadrinho.innerHTML=`Seja Bem vindo(a) ${localStorage.getItem('nome_apadrinhador')}`
+saudacaoONG.innerHTML=`Seja Bem vindo(a) ${localStorage.getItem('nome_ong')}`
