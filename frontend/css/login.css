@@ -144,6 +144,14 @@ color: var(--text-color-ligth);
   display: none;
 }
 
+#ErrorMessage{
+  text-align: center;
+  color:#ff0000;
+  padding:10px;
+  border-radius: 4px;
+  display:none;
+
+}
 @media(max-width: 768px){
   .mobile-text{
     display: block;

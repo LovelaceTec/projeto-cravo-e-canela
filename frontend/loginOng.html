@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/login.css">
 
     <script src="./js/transition.js" defer></script>
+    <script src="./js/loginOng.js" defer></script>
     <title>LoginOng</title>
 </head>
 <body>
@@ -21,11 +22,11 @@
                 <form action="@" class="form form-login">
                     <h2 class="form-title">Login</h2>
                     <div class="form-input-container">
-                        <input type="email" name="email" class="form-input" placeholder="Email">
-                        <input type="password" name="senha" class="form-input"  placeholder="Senha">
+                        <input type="email" name="email" id="email"class="form-input" placeholder="Email" required>
+                        <input type="password" name="senha" id="password" class="form-input"  placeholder="Senha" required>
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
-                    <button class="form-button">Entrar</button>
+                    <button class="form-button" onclick="login()">Entrar</button>
                     <p class="mobile-text">Ainda não é cadastrado? <a href="#" id="open-register-mobile">Cadastrar</a>
                     </p>
                 </form>
@@ -33,10 +34,10 @@
                 <form action="@" class="form form-register">
                     <h2 class="form-title">Cadastro</h2>
                     <div class="form-input-container">
-                        <input type="text"  name="text"  class="form-input" placeholder="Razão Social">
-                        <input type="email" name="email" class="form-input"  placeholder="Email">
-                        <input type="text" name="cnpj" class="form-input"  placeholder="CNPJ">
-                        <input type="password" class="form-input"  placeholder="Senha">
+                        <input type="text"  name="text"  class="form-input" placeholder="Razão Social" required>
+                        <input type="email" name="email" class="form-input"  placeholder="Email" required>
+                        <input type="text" name="cnpj" class="form-input"  placeholder="CNPJ" required>
+                        <input type="password" class="form-input"  placeholder="Senha" required>
                     </div>
                     <a href="#" class="form-link">Já possui conta?</a>
                     <button class="form-button">Cadastrar</button>

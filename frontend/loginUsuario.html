@@ -12,31 +12,34 @@
     <link rel="stylesheet" href="./css/login.css">
 
     <script src="./js/transition.js" defer></script>
+    <script src="./js/loginUsuario.js" defer></script>
+  
     <title>LoginUsuario</title>
 </head>
 <body>
     <main>
         <div class="login-container" id="login-container">
             <div class="form-container">
-                <form action="@" class="form form-login">
+                <form action="@" class="form form-login" id="FormLogin">
                     <h2 class="form-title">Login</h2>
                     <div class="form-input-container">
-                        <input type="email" name="email" class="form-input" placeholder="Email">
-                        <input type="password" name="senha" class="form-input"  placeholder="Senha">
+                        <input type="email"  name="email" class="form-input" placeholder="Email" required>
+                        <input type="password" name="senha" class="form-input"  placeholder="Senha" required>
                     </div>
+                   
                     <a href="#" class="form-link">Esqueceu a senha?</a>
                     <button class="form-button">Entrar</button>
                     <p class="mobile-text">Ainda não é cadastrado? <a href="#" id="open-register-mobile">Cadastrar</a>
                     </p>
                 </form>
 
-                <form action="@" class="form form-register">
+                <form action="@" class="form form-register" id="FormRegister">
                     <h2 class="form-title">Cadastro</h2>
                     <div class="form-input-container">
-                        <input type="text" name="nome" class="form-input" placeholder="Nome">
-                        <input type="email" name="email" class="form-input"  placeholder="Email">
-                        <input type="text" name="cpf" class="form-input"  placeholder="CPF">
-                        <input type="password" name="senha" class="form-input"  placeholder="Senha">
+                        <input type="text"  name="nome" class="form-input" placeholder="Nome" required>
+                        <input type="email" name="email" class="form-input"  placeholder="Email" required>
+                        <input type="text" name="cpf" class="form-input"  placeholder="CPF" required>
+                        <input type="password" name="senha" class="form-input"  placeholder="Senha" required>
                     </div>
                     <a href="#" class="form-link">Já possui conta?</a>
                     <button class="form-button">Cadastrar</button>
