@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,12 +21,13 @@ public class ApadrinhadoresController {
 
     @Autowired
     private IApadrinhadoresService service;
-
+    
+    @CrossOrigin
     @GetMapping("/apadrinhadores")
     public ArrayList<Apadrinhadores> recuperarTodos() {
         return service.buscarTodos();
     }
-
+    @CrossOrigin
     @PostMapping("/apadrinhadores")
     public ResponseEntity<Apadrinhadores> incluirNovo(@RequestBody Apadrinhadores novo) {
         Apadrinhadores res = service.criarNovo(novo);
