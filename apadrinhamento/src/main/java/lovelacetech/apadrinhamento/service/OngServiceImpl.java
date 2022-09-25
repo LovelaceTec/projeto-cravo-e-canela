@@ -18,7 +18,7 @@ public class OngServiceImpl implements IOngService{
 	public Ong criarNovo(Ong novo) {
 		// TODO Auto-generated method stub
 		if(novo.getNome_ong() != null) {
-			dao.save(novo);
+			return dao.save(novo);
 		}
 		return null;
 	}
@@ -27,7 +27,7 @@ public class OngServiceImpl implements IOngService{
 	public Ong atualizarDados(Ong dados) {
 		// TODO Auto-generated method stub
 		if(dados.getId_ong () != null && dados.getNome_ong() != null) {
-			dao.save(dados);
+			return dao.save(dados);
 		}
 		return null;
 	}

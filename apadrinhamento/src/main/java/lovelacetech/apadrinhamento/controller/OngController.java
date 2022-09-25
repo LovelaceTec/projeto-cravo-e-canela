@@ -36,7 +36,7 @@ public class OngController {
 	}
 	
 	@PostMapping("/ong")
-	public ResponseEntity <Ong> incluirNovo(@RequestBody Ong novo) {
+	public ResponseEntity<Ong> incluirNovo(@RequestBody Ong novo) {
 		Ong resultado = service.criarNovo(novo);
 		if(resultado != null) {
 			return ResponseEntity.ok(resultado);
