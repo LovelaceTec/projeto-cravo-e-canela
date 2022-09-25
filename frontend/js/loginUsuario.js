@@ -1,8 +1,10 @@
 const formUser = document.getElementById("FormRegister");
 const formLogin = document.getElementById("FormLogin");
 
+
 formUser.onsubmit = function (e) {
   e.preventDefault();
+  const cpf_cadastro = 
 
   fetch("http://localhost:8080/usuarios", {
     method: "POST",
@@ -19,20 +21,21 @@ formUser.onsubmit = function (e) {
     .then((response) => response.json())
     .then((data) => {
       fetch("http://localhost:8080/apadrinhadores", {
-        method: "POST",
-        mode: "cors", // no-cors, *cors, same-origin
+        method: "POST",       
         headers: {
           "Content-Type": "application/json",
         },
-
+       
         body: JSON.stringify({
           nome_pessoa: e.target.nome.value,
           email_apadrinhador: e.target.email.value,
-          cpf_pessoa: e.target.cpf.value,
+          cpf_pessoa: e.target.cpf.value.match(/\d/g).join(""),
           usuario: data,
+         
         }),
       }).then((data) => {
         alert("Usuário cadastrado com sucesso");
+        window.location.href = 'loginUsuario.html';
       });
     });
 };

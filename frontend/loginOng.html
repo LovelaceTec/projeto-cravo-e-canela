@@ -19,19 +19,19 @@
     <main>
         <div class="login-container" id="login-container">
             <div class="form-container">
-                <form action="@" class="form form-login">
+                <form action="@" class="form form-login" id="formLogin">
                     <h2 class="form-title">Login</h2>
                     <div class="form-input-container">
                         <input type="email" name="email" id="email"class="form-input" placeholder="Email" required>
                         <input type="password" name="senha" id="password" class="form-input"  placeholder="Senha" required>
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
-                    <button class="form-button" onclick="login()">Entrar</button>
+                    <button class="form-button">Entrar</button>
                     <p class="mobile-text">Ainda não é cadastrado? <a href="#" id="open-register-mobile">Cadastrar</a>
                     </p>
                 </form>
 
-                <form action="@" class="form form-register">
+                <form action="@" class="form form-register" id="formCadastro">
                     <h2 class="form-title">Cadastro</h2>
                     <div class="form-input-container">
                         <input type="text"  name="text"  class="form-input" placeholder="Razão Social" required>
