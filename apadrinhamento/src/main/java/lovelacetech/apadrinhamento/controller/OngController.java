@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +21,8 @@ public class OngController {
 	
 	@Autowired
 	private IOngService service;
-	
+
+	 @CrossOrigin
 	@GetMapping("/ong")
 	public ArrayList<Ong> recuperarTodos(){
 		return service.buscarTodos();
@@ -35,6 +37,7 @@ public class OngController {
 		return ResponseEntity.notFound().build();
 	}
 	
+	 @CrossOrigin
 	@PostMapping("/ong")
 	public ResponseEntity <Ong> incluirNovo(@RequestBody Ong novo) {
 		Ong resultado = service.criarNovo(novo);
