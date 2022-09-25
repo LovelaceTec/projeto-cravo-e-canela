@@ -1,4 +1,3 @@
-const urlLogin = "localhost:8080/login";
 const urlOng = "http://localhost:8080/ong";
 const urlUsuario = "http://localhost:8080/usuarios";
 
@@ -7,7 +6,7 @@ const formCadastro = document.getElementById("formCadastro");
 
 formCadastro.onsubmit = function (e) {
   e.preventDefault();
-  fetch("http://localhost:8080/ong", {
+  fetch(urlOng, {
     method: "GET",
     headers: {
       Accepted: "application/json",
@@ -21,7 +20,7 @@ formCadastro.onsubmit = function (e) {
       if (ongs.length > 0) {
         alert("Já existe um cadastro para esta ONG");
       } else {
-        fetch("http://localhost:8080/usuarios", {
+        fetch(urlUsuario, {
           method: "POST",
           headers: {
             "Content-type": " application/json",
@@ -34,7 +33,7 @@ formCadastro.onsubmit = function (e) {
         })
           .then((response) => response.json())
           .then((data) => {
-            fetch("http://localhost:8080/ong", {
+            fetch(urlOng, {
               method: "POST",
               headers: {
                 "Content-type": "application/json",
@@ -56,7 +55,7 @@ formCadastro.onsubmit = function (e) {
 
 formLogin.onsubmit = function (e) {
   e.preventDefault();
-  fetch("http://localhost:8080/usuarios", {
+  fetch(urlUsuario, {
     method: "GET",
     headers: {
       Accepted: "application/json",
@@ -76,7 +75,7 @@ formLogin.onsubmit = function (e) {
       } else if (usuarios.length > 1) {
         alert("ocorreu um erro, contate o administrador");
       } else {
-        fetch("http://localhost:8080/ong", {
+        fetch(urlOng, {
           method: "GET",
           headers: {
             Accepted: "application/json",

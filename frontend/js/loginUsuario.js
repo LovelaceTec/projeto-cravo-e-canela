@@ -1,9 +1,12 @@
 const formUser = document.getElementById("FormRegister");
 const formLogin = document.getElementById("FormLogin");
 
+const urlUsuarios = "http://localhost:8080/usuarios"
+const urlApadrinhadores = "http://localhost:8080/apadrinhadores"
+
 formUser.onsubmit = function (e) {
   e.preventDefault();
-  fetch("http://localhost:8080/apadrinhadores", {
+  fetch(urlApadrinhadores, {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -12,14 +15,14 @@ formUser.onsubmit = function (e) {
     .then((response) => response.json())
     .then((dataApadrinhadores) => {
       const apadrinhadores = dataApadrinhadores.filter((apadrinhador) => {
-        return apadrinhador.cpf_pessoa === e.target.cpf.value;
+        return apadrinhador.cpf_pessoa === e.target.cpf.value.match(/\d/g).join("");
       });
       console.log(apadrinhadores)
       
       if (apadrinhadores.length > 0) {
         alert("Cadastro já existe");
       } else {
-        fetch("http://localhost:8080/usuarios", {
+        fetch(urlUsuarios, {
           method: "POST",
           mode: "cors", // no-cors, *cors, same-origin
           headers: {
@@ -33,7 +36,7 @@ formUser.onsubmit = function (e) {
         })
           .then((response) => response.json())
           .then((data) => {
-            fetch("http://localhost:8080/apadrinhadores", {
+            fetch(urlApadrinhadores, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -56,7 +59,7 @@ formUser.onsubmit = function (e) {
 
 formLogin.onsubmit = function (e) {
   e.preventDefault();
-  fetch("http://localhost:8080/usuarios", {
+  fetch(urlUsuarios, {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -76,7 +79,7 @@ formLogin.onsubmit = function (e) {
       } else if (usuarios.length > 1) {
         alert("Ocorreu um erro, contate um administrador");
       } else {
-        fetch("http://localhost:8080/apadrinhadores", {
+        fetch(urlApadrinhadores, {
           method: "GET",
           headers: {
             Accept: "application/json",
