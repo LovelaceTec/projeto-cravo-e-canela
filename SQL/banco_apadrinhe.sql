@@ -1,5 +1,12 @@
+--Proposta de usuário específico para API
+--create user 'app_api'@'%' identified by '<SENHA>'
+--grant select, update, delete, insert on *.* to 'app_api'@'%';
+
+
+
 -- Para apagar o banco anterior e criar com essa versão, retire os dois traços 
-drop database apadrinhe;
+--  drop database apadrinhe;
+
 create database apadrinhe;
 use apadrinhe;
 
