@@ -47,7 +47,7 @@ public class Ong {
 	private Usuarios usuario;
 
 	@OneToMany(mappedBy = "id_animal", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("animais")
+	@JsonIgnoreProperties("id_ong")
 	private List<Animais> listaAnimais;
 
 	public Integer getId_ong() {
