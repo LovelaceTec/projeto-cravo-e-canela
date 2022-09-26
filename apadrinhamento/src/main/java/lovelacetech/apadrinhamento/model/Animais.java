@@ -24,10 +24,7 @@ public class Animais {
     @Column(name="id_animal")
     private Integer id_animal;
 
-    @ManyToOne
-	@JoinColumn(name = "id_ong")
-	@JsonIgnoreProperties("listaAnimais")
-	private Ong id_ong;
+    
 
     @Column(name="nome_pet", length=100, nullable=false)
     private String nome_pet;
@@ -55,6 +52,11 @@ public class Animais {
 
     @Column(name="meta", nullable=false)
     private Double meta;
+
+    @ManyToOne
+	@JoinColumn(name = "id_ong")
+	@JsonIgnoreProperties("listaAnimais")
+	private Ong id_ong;
 
     public Integer getId_animal() {
         return id_animal;
@@ -143,8 +145,4 @@ public class Animais {
     public void setMeta(Double meta) {
         this.meta = meta;
     }
-
-    
-    
-    
 }
