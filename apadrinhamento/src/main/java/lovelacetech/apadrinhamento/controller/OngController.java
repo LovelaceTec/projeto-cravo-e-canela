@@ -22,7 +22,7 @@ public class OngController {
 	@Autowired
 	private IOngService service;
 
-	 @CrossOrigin
+	@CrossOrigin
 	@GetMapping("/ong")
 	public ArrayList<Ong> recuperarTodos(){
 		return service.buscarTodos();
@@ -37,7 +37,7 @@ public class OngController {
 		return ResponseEntity.notFound().build();
 	}
 	
-	 @CrossOrigin
+	@CrossOrigin
 	@PostMapping("/ong")
 	public ResponseEntity<Ong> incluirNovo(@RequestBody Ong novo) {
 		Ong resultado = service.criarNovo(novo);

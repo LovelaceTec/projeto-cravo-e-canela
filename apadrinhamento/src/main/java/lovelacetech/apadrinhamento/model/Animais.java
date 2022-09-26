@@ -1,5 +1,7 @@
 package lovelacetech.apadrinhamento.model;
 
+import java.time.LocalDate;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -43,11 +47,11 @@ public class Animais {
     @Column(name="foto_pet", length=255, nullable=true)
     private String foto_pet;
     
-    //@DateTimeFormat(pattern="dd/MM/YYYY")
-	//private LocalDate inicio_campanha = LocalDate.; inicio apadrinhamento
+    @DateTimeFormat(pattern="dd/MM/YYYY")
+	private LocalDate inicio_campanha = LocalDate.of(2022, 04, 25); //inicio apadrinhamento
 
-    //@DateTimeFormat(pattern="dd/MM/YYYY")
-	//private LocalDate final_campanha = LocalDate.; final apadrinhamento
+    @DateTimeFormat(pattern="dd/MM/YYYY")
+	private LocalDate fim_campanha = LocalDate.of(2022, 06, 01); //final apadrinhamento
 
     @Column(name="meta", nullable=false)
     private Double meta;
@@ -116,6 +120,22 @@ public class Animais {
         this.foto_pet = foto_pet;
     }
 
+    public LocalDate getInicio_campanha() {
+        return inicio_campanha;
+    }
+
+    public void setInicio_campanha(LocalDate inicio_campanha) {
+        this.inicio_campanha = inicio_campanha;
+    }
+
+    public LocalDate getFim_campanha() {
+        return fim_campanha;
+    }
+
+    public void setFim_campanha(LocalDate fim_campanha) {
+        this.fim_campanha = fim_campanha;
+    }
+
     public Double getMeta() {
         return meta;
     }
@@ -124,6 +144,7 @@ public class Animais {
         this.meta = meta;
     }
 
+    
     
     
 }
