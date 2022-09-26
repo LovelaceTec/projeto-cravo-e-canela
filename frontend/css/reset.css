@@ -2,5 +2,14 @@
     margin: 0;
     padding: 0;    
     box-sizing: border-box;     
-    font-family: 'Poppins', sans-serif;     
+    font-family: 'Poppins', sans-serif; 
+    list-style: none;    
+    text-decoration: none;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth; 
+    outline: none;   
+}
+
+img {
+    width: 100%;
 }

@@ -1,0 +1,92 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    grid-template-rows: 3fr 7fr 5fr 2fr 1.2fr 1.2fr 2fr 1.7fr 1.2fr 2fr 2fr 2fr;
+
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "section1 section1 section1 sidebar "
+    "section2 section2 section2 sidebar"
+    "section3 section3 section3 section3"
+    "section4  section4  section4  section4"
+    "section5 section5 section6 section6"
+    "section8 section7 section7 section7"
+    "section9 section9 section9 section9"
+    "section10 section10 section10 section10"
+    "footer footer footer footer";   
+    grid-gap:0.2rem;
+}
+
+/* Menu */
+header {    
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3 {
+    background: rgb(148, 145, 145);
+    grid-area: section3;
+}
+
+.section4 {
+    background: rgb(231, 183, 49);
+    grid-area: section4;
+}
+
+.section5 {
+    background: rgb(20, 20, 20);
+    grid-area: section5;
+
+}
+
+.section6 {
+    background: rgb(235, 118, 23);
+    grid-area: section6;
+}
+
+.section7 {
+    background: rgb(148, 145, 145);
+    grid-area: section7;
+}
+
+.section8 {
+    background: rgb(148, 145, 145);
+    grid-area: section8;
+}
+
+.section8 {
+    background: rgb(231, 183, 49);
+    grid-area: section8;
+}
+
+.section9 {
+    background: rgb(235, 118, 23);
+    grid-area: section9;
+}
+
+.section10 {
+    background: rgb(20, 20, 20);
+    grid-area: section10;
+}
+
+footer {
+    background: rgb(235, 118, 23);
+    grid-area: footer;
+}
