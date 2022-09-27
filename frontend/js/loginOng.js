@@ -14,7 +14,10 @@ formCadastro.onsubmit = function (e) {
     .then((response) => response.json())
     .then((dataOngs) => {
       const ongs = dataOngs.filter((ong) => {
-        return ong.cnpj_ong === e.target.cnpj.value;
+        return(
+          ong.cnpj_ong === e.target.cnpj.value,
+          ong.email_senha ===e.target.senha.value
+        ) 
       });
       if (ongs.length > 0) {
         alert("Já existe um cadastro para esta ONG");
@@ -49,16 +52,20 @@ formLogin.onsubmit = function (e) {
     .then((response) => response.json())
     .then((dataOngs) => {
       const ongs = dataOngs.filter((ong) => {
-        return ong.email_ong === e.target.email.value;
+        return (
+          ong.email_ong === e.target.email.value,
+          ong.email_senha ===e.target.senha.value
+
+        ) 
       });
       console.log(ongs);
       if (ongs.length === 0) {
-        alert("Este usuário não tem permissão para logar como ong");
+        alert("Email ou senha incorretos");
       } else if (ongs.length > 1) {
         alert("Ocorreu um erro, contate o administrador");
       } else {   
         localStorage.setItem('ong_id',JSON.stringify(ongs[0].id_ong));
-        window.location.href = "d2-ong.html";
+        window.location.href = "d1-ong.html";
       }
     });
 };
