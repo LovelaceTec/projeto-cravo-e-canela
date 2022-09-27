@@ -99,7 +99,7 @@ formLogin.onsubmit = function (e) {
                 "nome_apadrinhador",
                 apadrinhadores[0].nome_pessoa
               );
-              window.location.href = "padrinho.html";
+              window.location.href = "d1-padrinho.html";
             }
           });
       }
