@@ -99,7 +99,5 @@ public class Apadrinhamento {
 		this.status_transacao = status_transacao;
 	}
 
-	
 
-	
 }

@@ -21,7 +21,7 @@ Apresentação: 30/09/2022
   - [Requisitos do projeto](#resuisitos-do-projeto)  
   - [Instalacao](#instalacao)
   - [Documentacao do banco de dados](#documentacao-do-banco-de-dados)
-  - [Documentacao da API Swegger](#documentacao-da-api-swegger)
+  - [Documentacao da API Swegger](#documentacao-da-api-swagger)
   - [Documentacao Frontend](#documentacao-frontend)
   - [Arquitetura do projeto](#arquitetura-do-projeto) 
   - [Agradecimentos](#agradecimentos)
@@ -67,7 +67,7 @@ Apresentação: 30/09/2022
 
 <br>
  
-#### Documentacao da API Swegger
+#### Documentacao da API Swagger
 
 <br>
  

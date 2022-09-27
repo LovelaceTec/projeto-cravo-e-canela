@@ -8,9 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -27,7 +25,7 @@ public class Ong {
 	@Column(name="nome_ong", length = 100, nullable = false)
 	private String nome_ong;
 	
-	@Column(name="cnpj_ong", length = 20, nullable = false)
+	@Column(name="cnpj_ong", length = 20, nullable = false, unique = true)
 	private String cnpj_ong;
 
 	@Column(name="email_ong", length = 50, nullable = true)
@@ -42,9 +40,8 @@ public class Ong {
 	@Column(name="cadastro_validado", length = 1, nullable = true)
 	private String cadastro_validado;
 
-	@OneToOne
-	@JoinColumn(name="id_usuario")
-	private Usuarios usuario;
+	@Column(name="senha_ong", length = 30, nullable = true)
+	private String senha_ong;
 
 	@OneToMany(mappedBy = "id_animal", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("id_ong")
@@ -106,12 +103,12 @@ public class Ong {
 		this.cadastro_validado = cadastro_validado;
 	}
 
-	public Usuarios getUsuario() {
-		return usuario;
+	public String getSenha_ong() {
+		return senha_ong;
 	}
 
-	public void setUsuario(Usuarios usuario) {
-		this.usuario = usuario;
+	public void setSenha_ong(String senha_ong) {
+		this.senha_ong = senha_ong;
 	}
 
 	public List<Animais> getListaAnimais() {
@@ -121,4 +118,6 @@ public class Ong {
 	public void setListaAnimais(List<Animais> listaAnimais) {
 		this.listaAnimais = listaAnimais;
 	}
+
+	
 }

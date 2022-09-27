@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -21,15 +19,14 @@ public class Apadrinhadores {
     @Column(name="nome_pessoa", length=250, nullable=false)
     private String nome_pessoa;
 
-    @Column(name="cpf_pessoa", length=11, nullable=false)
+    @Column(name="cpf_pessoa", length=11, nullable=false, unique = true)
     private String cpf_pessoa;
 
-    @Column(name="email_apadrinhador", length=50, nullable=false)
-    private String email_apadrinhador;
+    @Column(name="email_pessoa", length=50, nullable=true)
+    private String email_pessoa;
 
-    @OneToOne
-	@JoinColumn(name="id_usuario")
-	private Usuarios usuario;
+    @Column(name="senha_pessoa", length=30, nullable=true)
+    private String senha_pessoa;
 
     public Integer getId_pessoa() {
         return id_pessoa;
@@ -55,21 +52,22 @@ public class Apadrinhadores {
         this.cpf_pessoa = cpf_pessoa;
     }
 
-    public String getEmail_apadrinhador() {
-        return email_apadrinhador;
+    public String getEmail_pessoa() {
+        return email_pessoa;
     }
 
-    public void setEmail_apadrinhador(String email_apadrinhador) {
-        this.email_apadrinhador = email_apadrinhador;
+    public void setEmail_pessoa(String email_pessoa) {
+        this.email_pessoa = email_pessoa;
     }
 
-    public Usuarios getUsuario() {
-        return usuario;
+    public String getSenha_pessoa() {
+        return senha_pessoa;
     }
 
-    public void setUsuario(Usuarios usuario) {
-        this.usuario = usuario;
+    public void setSenha_pessoa(String senha_pessoa) {
+        this.senha_pessoa = senha_pessoa;
     }
 
+    
     
 }

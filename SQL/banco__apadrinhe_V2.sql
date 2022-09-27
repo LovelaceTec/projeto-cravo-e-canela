@@ -47,7 +47,9 @@ create table animais(
     foto_pet varchar(255),
     inicio_campanha date,
     fim_campanha date,
-    meta double
+    meta double,
+	constraint ong_animais foreign key
+		(id_ong) references ongs(id_ong)
 );
 
 

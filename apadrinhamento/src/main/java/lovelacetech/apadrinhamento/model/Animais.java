@@ -24,8 +24,6 @@ public class Animais {
     @Column(name="id_animal")
     private Integer id_animal;
 
-    
-
     @Column(name="nome_pet", length=100, nullable=false)
     private String nome_pet;
 
