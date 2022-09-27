@@ -21,7 +21,7 @@ public class Animais {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name="id_animal")
+    @Column(name="id_pet")
     private Integer id_animal;
 
     @Column(name="nome_pet", length=100, nullable=false)
@@ -52,7 +52,7 @@ public class Animais {
     private Double meta;
 
     @ManyToOne
-	@JoinColumn(name = "id_ong")
+	@JoinColumn(name = "id_ong_pet")
 	@JsonIgnoreProperties("listaAnimais")
 	private Ong id_ong;
 

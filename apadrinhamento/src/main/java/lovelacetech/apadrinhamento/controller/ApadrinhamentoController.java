@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import lovelacetech.apadrinhamento.dto.ApadrinhamentoPorOng;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 import lovelacetech.apadrinhamento.service.IApadrinhamentoService;
 
@@ -58,6 +59,11 @@ public class ApadrinhamentoController {
             return ResponseEntity.ok(res);
         }
         return ResponseEntity.notFound().build();
+    }
+	
+    @GetMapping("/apadrinhamento/idong/{id_ong}")
+    public ArrayList<ApadrinhamentoPorOng> buscarPorIdOng(@PathVariable Integer id_ong) {
+    	return service.buscarPorIdOng(id_ong);
     }
 	
 }

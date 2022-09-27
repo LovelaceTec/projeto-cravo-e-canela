@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lovelacetech.apadrinhamento.dao.ApadrinhamentoDAO;
+import lovelacetech.apadrinhamento.dto.ApadrinhamentoPorOng;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 
 @Service
@@ -51,5 +52,11 @@ public class ApadrinhamentoServiceImpl implements IApadrinhamentoService{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public ArrayList<ApadrinhamentoPorOng> buscarPorIdOng(Integer id_ong){
+		return dao.buscarPorIdOng(id_ong);
+	}
+
 
 }

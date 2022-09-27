@@ -1,103 +1,68 @@
-package lovelacetech.apadrinhamento.model;
+package lovelacetech.apadrinhamento.dto;
+
 
 import java.time.LocalDate;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
-import org.springframework.format.annotation.DateTimeFormat;
+import lovelacetech.apadrinhamento.model.Animais;
+import lovelacetech.apadrinhamento.model.Apadrinhadores;
 
-@Entity
-@Table(name="apadrinhamento")
-public class Apadrinhamento {
-	
-	@Column(name="id_apadrinhamento")
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+public class ApadrinhamentoPorOng {
+
 	private Integer id_apadrinhamento;
-	
-	@ManyToOne
-	@JoinColumn(name="id_pet_ap")
 	private Animais animal;
-	
-	@ManyToOne
-	@JoinColumn(name="id_ong_ap")
-	private Ong ong;
-	
-	@ManyToOne
-	@JoinColumn(name="id_pessoa_ap")
 	private Apadrinhadores pessoa;
-	
-	@DateTimeFormat(pattern="dd/MM/YYYY")
-	private LocalDate data_apadrinhamento = LocalDate.now();
-	
-	@Column(name="valor", nullable=true)
+	private LocalDate data_apadrinhamento;
 	private Double valor;
-	
-	@Column(name="status_transacao", length = 10, nullable = true)
 	private String status_transacao;
-
+	public ApadrinhamentoPorOng(Integer id_apadrinhamento, Animais animal, Apadrinhadores pessoa,
+			LocalDate data_apadrinhamento, Double valor, String status_transacao) {
+		super();
+		this.id_apadrinhamento = id_apadrinhamento;
+		this.animal = animal;
+		this.pessoa = pessoa;
+		this.data_apadrinhamento = data_apadrinhamento;
+		this.valor = valor;
+		this.status_transacao = status_transacao;
+	}
 	public Integer getId_apadrinhamento() {
 		return id_apadrinhamento;
 	}
-
 	public void setId_apadrinhamento(Integer id_apadrinhamento) {
 		this.id_apadrinhamento = id_apadrinhamento;
 	}
-
 	public Animais getAnimal() {
 		return animal;
 	}
-
 	public void setAnimal(Animais animal) {
 		this.animal = animal;
 	}
-
-	public Ong getOng() {
-		return ong;
-	}
-
-	public void setOng(Ong ong) {
-		this.ong = ong;
-	}
-
 	public Apadrinhadores getPessoa() {
 		return pessoa;
 	}
-
 	public void setPessoa(Apadrinhadores pessoa) {
 		this.pessoa = pessoa;
 	}
-
 	public LocalDate getData_apadrinhamento() {
 		return data_apadrinhamento;
 	}
-
 	public void setData_apadrinhamento(LocalDate data_apadrinhamento) {
 		this.data_apadrinhamento = data_apadrinhamento;
 	}
-
 	public Double getValor() {
 		return valor;
 	}
-
 	public void setValor(Double valor) {
 		this.valor = valor;
 	}
-
 	public String getStatus_transacao() {
 		return status_transacao;
 	}
-
 	public void setStatus_transacao(String status_transacao) {
 		this.status_transacao = status_transacao;
 	}
-
-
+	
+		
+	
 }

@@ -37,8 +37,8 @@ create table ongs(
 
 
 create table animais(
-	id_animal integer auto_increment primary key not null,
-    id_ong integer not null,
+	id_pet integer auto_increment primary key not null,
+    id_ong_pet integer not null,
     nome_pet varchar(100) not null,
     especie_pet varchar(50),
     idade_pet varchar(10),
@@ -48,8 +48,8 @@ create table animais(
     inicio_campanha date,
     fim_campanha date,
     meta double,
-	constraint ong_animais foreign key
-		(id_ong) references ongs(id_ong)
+    constraint ong_pet foreign key
+		(id_ong_pet) references ongs(id_ong)
 );
 
 
@@ -57,18 +57,18 @@ create table animais(
 
 create table apadrinhamento(
 	id_apadrinhamento integer auto_increment primary key not null,
-	id_animal integer not null,
-	id_ong integer not null,
-	id_pessoa integer not null,
+	id_pet_ap integer not null,
+	id_ong_ap integer not null,
+	id_pessoa_ap integer not null,
 	data_apadrinhamento date,
 	valor double,
 	status_transacao varchar(10),
 	constraint ap_animal foreign key
-		(id_animal) references animais(id_animal),
+		(id_pet_ap) references animais(id_pet),
 	constraint ap_ong foreign key
-		(id_ong) references ongs(id_ong),
+		(id_ong_ap) references ongs(id_ong),
 	constraint ap_pessoa foreign key
-		(id_pessoa) references apadrinhadores(id_pessoa)
+		(id_pessoa_ap) references apadrinhadores(id_pessoa)
 );
 
 
@@ -102,3 +102,5 @@ insert into apadrinhamento values
 (null,2,2,3,"2022-09-17",50.0,"concluído"),
 (null,3,3,2,"2022-08-24",300.0,"concluído"),
 (null,4,4,1,"2022-08-31",60.0,"Andamento");
+
+
