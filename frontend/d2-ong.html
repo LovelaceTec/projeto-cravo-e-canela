@@ -60,6 +60,23 @@
                 </div>
             </section>
 
+            <section>
+                          
+                <div class="input-card">
+                    <label for="descritivo-card" >Descreva sobre a causa: </label>
+                    <textarea name="descritivo-card" id="descritivo-card" cols="15" rows="5" maxlength = "320" minlength= "50" required = "" placeholder = "Descrição com mínimo 50 e máximo 320 caracteres"></textarea>
+                </div>    
+            </section>
+
+            <section class="image">
+                <label for="#" class="picture" tabindex="0">
+                    <input type="file" accept="image/*" class="picture__input">
+                    <span class="picture__image">Selecione a foto do PET</span>
+                </label>
+ 
+            </section>
+
+
             <section>            
                 <div class="card">
                     <div class="input-card">
@@ -68,26 +85,28 @@
                     </div>
         
                     <div class="input-card">
-                        <label for="idade-pet-card" >Idade do PET</label>
+                        <label for="idade-pet-card" >Idade</label>
                         <input type="number" id="idade-pet-card" placeholder="Idade do pet">
                     </div>   
                     
                     <div class="input-card">
-                        <label for="tipo-pet-card" >Tipo do PET</label>
-                        <input type="text" id="tipo-pet-card" placeholder="Tipo do pet">
-                    </div>               
-          
-                    <div class="input-card">
-                        <label for="descritivo-card" >Descreva sobre a causa: </label>
-                        <textarea name="descritivo-card" id="descritivo-card" cols="15" rows="5" maxlength = "320" minlength= "50" required = "" placeholder = "Descrição com mínimo 50 caracteres e máximo 320"></textarea>
-                    </div>       
-                       
+                        <label for="tipo-pet-card" >Espécie</label>
+                        <select name="tipo-pet-card" id="tipo-pet-card">
+                            <option value="">Mamíferos</option>
+                            <option value="">Répteis</option>
+                            <option value="">Peixes</option>
+                            <option value="">Aves</option>
+                        </select>
+                    </div>              
+                        
                     <div class="btn-card">
                     <button type = "submit" onclick="cadastro.salvar()" class="btn-salvar" id="btn-um">Salvar</button>
         
                     <button onclick="cadastro.cancelar()" class="btn-cancelar">Limpar</button>
                 </div>
             </section>
+
+
 
             <section>     
                 <div class="content-table">
@@ -99,7 +118,7 @@
                             
                             <th>Nome do pet</th>
                             <th>Idade</th>
-                            <th>Tipo</th>
+                            <th>Espécie</th>
 
                             <th>R$ Total arrecadado</th>
                             <th>% Meta</th>
