@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lovelacetech.apadrinhamento.dto.ApadrinhamentoPorOng;
+import lovelacetech.apadrinhamento.dto.SomatoriaOng;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 import lovelacetech.apadrinhamento.service.IApadrinhamentoService;
 
@@ -73,5 +74,12 @@ public class ApadrinhamentoController {
     public ArrayList<ApadrinhamentoPorOng> buscarPorIdOng(@PathVariable Integer id_ong) {
     	return service.buscarPorIdOng(id_ong);
     }
+	
+	@CrossOrigin
+    @GetMapping("/somatoria/idong/{id_ong}")
+    public ArrayList<SomatoriaOng> somatoriaPorIdOng(@PathVariable Integer id_ong) {
+    	return service.somatoriaPorIdOng(id_ong);
+    }
+	
 	
 }

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import lovelacetech.apadrinhamento.dao.ApadrinhamentoDAO;
 import lovelacetech.apadrinhamento.dto.ApadrinhamentoPorOng;
+import lovelacetech.apadrinhamento.dto.SomatoriaOng;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 
 @Service
@@ -57,6 +58,13 @@ public class ApadrinhamentoServiceImpl implements IApadrinhamentoService{
 	public ArrayList<ApadrinhamentoPorOng> buscarPorIdOng(Integer id_ong){
 		return dao.buscarPorIdOng(id_ong);
 	}
-
+	
+	@Override
+	public ArrayList<SomatoriaOng> somatoriaPorIdOng(Integer id_ong){
+		return dao.somatoriaPorIdOng(id_ong);
+	}
+	
+	
+	
 
 }
