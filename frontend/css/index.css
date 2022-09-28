@@ -108,9 +108,16 @@ hr {
     background-color: var(--primary-color);
 }
 
-.efect-dir {
+.home a {
+    color: var(--color-variant1b);
+    font-size: 0.9rem;
+    font-weight: 550;
 
 }
+
+/*.efect-dir {
+
+}*/
 
 .efect-esq2 {
     width: 23%;
