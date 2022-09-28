@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import lovelacetech.apadrinhamento.dto.ApadrinhamentoPorOng;
 import lovelacetech.apadrinhamento.dto.SomatoriaOng;
+import lovelacetech.apadrinhamento.dto.SomatoriaPet;
+import lovelacetech.apadrinhamento.dto.SomatoriaApadrinhador;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 
 public interface IApadrinhamentoService {
@@ -14,4 +16,6 @@ public interface IApadrinhamentoService {
 	public void excluirApadrinhamento(Integer id);	
 	public ArrayList<ApadrinhamentoPorOng> buscarPorIdOng(Integer id_ong);
 	public ArrayList<SomatoriaOng> somatoriaPorIdOng(Integer id_ong);
+	public ArrayList<SomatoriaApadrinhador> somatoriaPorIdApad(Integer id_pessoa);
+	public ArrayList<SomatoriaPet> somatoriaPorIdPet(Integer id_pessoa);
 }

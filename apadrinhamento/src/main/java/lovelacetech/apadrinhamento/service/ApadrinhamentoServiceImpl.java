@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 
 import lovelacetech.apadrinhamento.dao.ApadrinhamentoDAO;
 import lovelacetech.apadrinhamento.dto.ApadrinhamentoPorOng;
+import lovelacetech.apadrinhamento.dto.SomatoriaApadrinhador;
 import lovelacetech.apadrinhamento.dto.SomatoriaOng;
+import lovelacetech.apadrinhamento.dto.SomatoriaPet;
 import lovelacetech.apadrinhamento.model.Apadrinhamento;
 
 @Service
@@ -65,6 +67,14 @@ public class ApadrinhamentoServiceImpl implements IApadrinhamentoService{
 	}
 	
 	
+	@Override
+	public ArrayList<SomatoriaApadrinhador> somatoriaPorIdApad(Integer id_pessoa){
+		return dao.somatoriaPorIdApad(id_pessoa);
+	}
 	
+	@Override
+	public ArrayList<SomatoriaPet> somatoriaPorIdPet(Integer id_pet){
+		return dao.somatoriaPorIdPet(id_pet);
+	}
 
 }
