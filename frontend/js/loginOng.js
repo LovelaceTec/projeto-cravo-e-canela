@@ -16,7 +16,7 @@ formCadastro.onsubmit = function (e) {
       const ongs = dataOngs.filter((ong) => {
         return(
           ong.cnpj_ong === e.target.cnpj.value,
-          ong.email_senha ===e.target.senha.value
+          ong.email_senha === e.target.senha.value
         ) 
       });
       if (ongs.length > 0) {

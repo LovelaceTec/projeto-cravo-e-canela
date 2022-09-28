@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,12 +22,13 @@ public class AdministradorController {
 	@Autowired
 	private IAdministradorService service;
 	
+	@CrossOrigin
 	@GetMapping("/administrador")
 	public ArrayList<Administrador> recuperarTodos(){
 		return service.buscarTodos(null);
 	
 	}
-
+	@CrossOrigin
 	@PostMapping("/administrador")
 	public ResponseEntity <Administrador> incluirNovo(@RequestBody Administrador novo) {
 		Administrador resultado = service.criarNovo(novo);
@@ -35,6 +37,8 @@ public class AdministradorController {
 		}
 		return ResponseEntity.badRequest().build();	
 	}
+	
+	@CrossOrigin
 	@PutMapping("/administrador")
 	public ResponseEntity<Administrador> alterar(@RequestBody Administrador dados){
 		Administrador resultado = service.atualizarDados(dados);
@@ -44,12 +48,14 @@ public class AdministradorController {
 		return ResponseEntity.badRequest().build();
 	}
 	
+	@CrossOrigin
 	@DeleteMapping("/administrador/{id}")
 	public ResponseEntity<Administrador> excluirAdministrador(@PathVariable Integer id){
 		service.excluirAdministrador(id);
 		return ResponseEntity.ok(null);
 	}
 	
+	@CrossOrigin
 	@GetMapping("/administrador/{id_adm}")
 	public ResponseEntity<Administrador> buscarPeloId(@PathVariable Integer id_adm){
 		Administrador resultado = service.buscarPeloId(id_adm);

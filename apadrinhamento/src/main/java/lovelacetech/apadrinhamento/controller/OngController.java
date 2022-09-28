@@ -28,6 +28,7 @@ public class OngController {
 		return service.buscarTodos();
 	}
 	
+	@CrossOrigin
 	@GetMapping("/ong/{id}")
 	public ResponseEntity<Ong> buscarPeloId(@PathVariable Integer id){
 		Ong resultado = service.buscarPeloId(id);
@@ -47,6 +48,7 @@ public class OngController {
 		return ResponseEntity.badRequest().build();
 	}
 	
+	@CrossOrigin
 	@PutMapping("/ong")
 	public ResponseEntity<Ong> alterar(@RequestBody Ong dados){
 		Ong resultado = service.atualizarDados(dados);
@@ -56,6 +58,7 @@ public class OngController {
 		return ResponseEntity.badRequest().build();
 	}
 	
+	@CrossOrigin
 	@DeleteMapping("/ong/{id}")
 	public ResponseEntity<Ong> excluirOng(@PathVariable Integer id){
 		service.excluirOng(id);

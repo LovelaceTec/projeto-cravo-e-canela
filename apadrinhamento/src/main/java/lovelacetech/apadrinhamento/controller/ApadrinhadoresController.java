@@ -37,6 +37,7 @@ public class ApadrinhadoresController {
         return ResponseEntity.badRequest().build();
     }
 
+    @CrossOrigin
     @PutMapping("/apadrinhadores")
     public ResponseEntity<Apadrinhadores> alterar(@RequestBody Apadrinhadores dados) {
         Apadrinhadores res = service.atualizarDados(dados);
@@ -46,12 +47,14 @@ public class ApadrinhadoresController {
         return ResponseEntity.badRequest().build();
     }
 
+    @CrossOrigin
     @DeleteMapping("/apadrinhadores/{id}")
     public ResponseEntity<Apadrinhadores> excluirApadrinhadores(@PathVariable Integer id) {
         service.excluirApadrinhadores(id);
         return ResponseEntity.ok(null);
     }
 
+    @CrossOrigin
     @GetMapping("/apadrinhadores/{id}")
     public ResponseEntity<Apadrinhadores> buscarPeloId(@PathVariable Integer id) {
         Apadrinhadores res = service.buscarPeloId(id);

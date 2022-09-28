@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,11 +23,13 @@ public class ApadrinhamentoController {
 	@Autowired
 	private IApadrinhamentoService service;
 	
+	@CrossOrigin
 	@GetMapping("/apadrinhamento")
 	public ArrayList<Apadrinhamento> recuperTodos(){
 		return service.buscarTodos();
 	}
 	
+	@CrossOrigin
 	@PostMapping("/apadrinhamento")
 	public ResponseEntity<Apadrinhamento> incluirNovo(@RequestBody Apadrinhamento novo) {
 		Apadrinhamento resultado = service.criarNovo(novo);
@@ -37,6 +40,7 @@ public class ApadrinhamentoController {
 	}
 	
 
+	@CrossOrigin
     @PutMapping("/apadrinhamento")
     public ResponseEntity<Apadrinhamento> alterar(@RequestBody Apadrinhamento dados) {
     	Apadrinhamento resultado = service.atualizarDados(dados);
@@ -45,13 +49,16 @@ public class ApadrinhamentoController {
         }
         return ResponseEntity.badRequest().build();
     }
-
+	
+	
+	@CrossOrigin
     @DeleteMapping("/apadrinhamento/{id}")
     public ResponseEntity<Apadrinhamento> excluirApadrinhamento(@PathVariable Integer id) {
         service.excluirApadrinhamento(id);
         return ResponseEntity.ok(null);
     }
 
+	@CrossOrigin
     @GetMapping("/apadrinhamento/{id}")
     public ResponseEntity<Apadrinhamento> buscarPeloId(@PathVariable Integer id) {
     	Apadrinhamento res = service.buscarPeloId(id);
@@ -61,6 +68,7 @@ public class ApadrinhamentoController {
         return ResponseEntity.notFound().build();
     }
 	
+	@CrossOrigin
     @GetMapping("/apadrinhamento/idong/{id_ong}")
     public ArrayList<ApadrinhamentoPorOng> buscarPorIdOng(@PathVariable Integer id_ong) {
     	return service.buscarPorIdOng(id_ong);
