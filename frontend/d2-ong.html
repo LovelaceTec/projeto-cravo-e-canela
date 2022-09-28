@@ -42,71 +42,75 @@
             <div class="title">
                 <h2 class="itens">ONG, cadastre sua campanha</h2>
             </div>
-            
-            <div class="card">
-                <div class="input-card">
-                    <label for="nome-card" >Nome do PET</label>
-                    <input type="text" id="nomeAluno" placeholder="Nome do pet">
-                </div>
-    
-                <div class="input-card">
-                    <label for="nota1-card" >Idade do PET</label>
-                    <input type="number" id="nota1" placeholder="Idade do pet">
-                </div>
-    
-                
-                <div class="input-card">
-                    <label for="nota2-card" >Tipo do PET</label>
-                    <input type="text" id="nota2" placeholder="Tipo do pet">
-                </div>         
-                
-                <div class="input-card">
-                    <label for="nota2-card" >Início da campanha</label>
-                    <input type="date" id="" placeholder="Tipo do pet">
-                </div>         
 
-               
+            <section>
                 <div class="input-card">
-                    <label for="nota2-card" >Final da campanha</label>
-                    <input type="date" id="" placeholder="Tipo do pet">
-                </div>         
+                    <label for="data-inicio-card" >Início da campanha</label>
+                    <input type="date" id="data-inicio-card" >
+                </div>    
+             
+                <div class="input-card">
+                    <label for="data-fim-card" >Final da campanha</label>
+                    <input type="date" id="data-fim-card" >
+                </div>  
 
+                <div class="input-card">
+                    <label for="total-campanha-card" >Valor total da campanha</label>
+                    <input type="number" id="total-campanha-car" placeholder="Valor total">
+                </div>
+            </section>
+
+            <section>            
+                <div class="card">
+                    <div class="input-card">
+                        <label for="nome-pet-card" >Nome do PET</label>
+                        <input type="text" id="nome-pet-card" placeholder="Nome do pet">
+                    </div>
+        
+                    <div class="input-card">
+                        <label for="idade-pet-card" >Idade do PET</label>
+                        <input type="number" id="idade-pet-card" placeholder="Idade do pet">
+                    </div>   
                     
-                <div class="input-card">
-                    <label for="frequencia-card" >Descreva sobre a causa: </label>
-                    <textarea name="descricao" id="descricao" cols="15" rows="5" maxlength = "320" minlength= "50" required = "" placeholder = "Descrição com mínimo 50 caracteres e máximo 320"></textarea>
+                    <div class="input-card">
+                        <label for="tipo-pet-card" >Tipo do PET</label>
+                        <input type="text" id="tipo-pet-card" placeholder="Tipo do pet">
+                    </div>               
+          
+                    <div class="input-card">
+                        <label for="descritivo-card" >Descreva sobre a causa: </label>
+                        <textarea name="descritivo-card" id="descritivo-card" cols="15" rows="5" maxlength = "320" minlength= "50" required = "" placeholder = "Descrição com mínimo 50 caracteres e máximo 320"></textarea>
+                    </div>       
+                       
+                    <div class="btn-card">
+                    <button type = "submit" onclick="cadastro.salvar()" class="btn-salvar" id="btn-um">Salvar</button>
+        
+                    <button onclick="cadastro.cancelar()" class="btn-cancelar">Limpar</button>
                 </div>
+            </section>
 
+            <section>     
+                <div class="content-table">
+                    <table border="1">
+                        <thead>              
+                            <th>Data de início</th>
+                            <th>Data final</th>
+                            <th>R$ Total da campanha</th>
+                            
+                            <th>Nome do pet</th>
+                            <th>Idade</th>
+                            <th>Tipo</th>
 
-                   
-                <div class="btn-card">
-                <button type = "submit" onclick="boletim.salvar()" class="btn-salvar" id="btn-um">Salvar</button>
-    
-                <button onclick="boletim.cancelar()" class="btn-cancelar">Limpar</button>
-            </div>
-    
-            <div class="content-table">
-                <table border="1">
-                    <thead>
-                        <th>Id</th>
-                        <th>Início</th>
-                        <th>Fim</th>
-                        <th>Nome do pet</th>
-                        <th>Idade</th>
-                        <th>Tipo</th>
-                        <th>R$ Total da campanha</th>
-                        <th>R$ Total arrecadado</th>
-                        <th>% Meta</th>
-                        <th>Ações</th>
-                    </thead>
-                    <tbody id="tbody">
-                    </tbody>                
-                </table>
-            </div>
-
-        </main>    
-
+                            <th>R$ Total arrecadado</th>
+                            <th>% Meta</th>
+                            <th>Ações</th>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>                
+                    </table>
+                </div>
+            </section>        
+        </main>   
     </form>
-
 </body>
 </html>
