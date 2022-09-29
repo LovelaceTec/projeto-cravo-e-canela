@@ -1,8 +1,9 @@
+
 main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 
@@ -35,6 +36,19 @@ main {
     transition: 1.2s;
  }
 
+ /*----------------------------------------------------LOGO*/
+ .form-social img {
+  height: 3rem;
+
+ }
+
+  /*----------------------------------------------------ESQUECEU SENHA*/
+ .form-container a{
+  font-size: 0.8rem;
+  color: var(--color-option1);
+  font-weight: 595;
+ }
+
  .form-register{
   transform: translateX(-100%);
   z-index: -1;
@@ -60,7 +74,7 @@ main {
  }
 
  .form-title-ligth {
-   color: var(--text-color-ligth);   
+   color: var( --text-color-ligth2);   
  }
 
  .form-input-container {
@@ -72,15 +86,15 @@ main {
  .form-input {
    height: 40px;
    width: 300px;
-   padding: 10px 20px;
+   margin: -5px 20px;
    border-style: none;
    outline: none;
-   border-bottom: 1px solid var(--text-color-dark);
+   border-bottom: 1px solid var(--color-variant5);
  }
 
  .form-button{
    border-style: none;
-   height: 40px;
+   height: 35px;
    width: 140px;
    border-radius: 9px;
    border: 2px solid var(--primary-color);
@@ -94,12 +108,13 @@ main {
 
  .form-button:hover{
    background-color: var(--primary-color);
-   color: var(--text-color-ligth);
+   color: var(--text-color-ligth1);
+   
  }
 
  .form-button-ligth {
-   border: 2px solid var(--text-color-ligth);
-   color: var(--text-color-ligth);
+   border: 2px solid var(--text-color-ligth1);
+   color: var(--text-color-ligth1);
  }
 
  /*Efeito de transição entre forms*/
@@ -115,7 +130,7 @@ text-align: center;
 transform: translateX(100%);
 z-index: 10;
 transition: 1.2s;
-color: var(--text-color-ligth);
+color: var(--text-color-ligth1);
 }
 
 .login-container.move .overlay-container{
