@@ -1,433 +1,191 @@
-* {
+html, body {
     font-family: 'Poppins', sans-serif;
-}
-
-body {
-    color: var(--text-color-dark);    
-    
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    height: 9%;
+    font-size: 15px;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    margin: 0;
     top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 220px;
-    transition: 0.5s linear;
-   background: fff;  /* --------------------------------------Verificar*/
-    box-shadow: 0 5px 20px  var(--secundary-color);
-}
-
-.logo img {
-    width: 120px;
-}
-
-.menu {
-    background-color: var(--text-color-ligth1);
-}
-
-#menu-icon {
-    font-size: 28px;
-    z-index: 100001;
-    cursor: pointer;
-    display: none;
+    left: 0;
+    overflow-x: hidden;
+    background-color: white;
+    min-height: 100vh;
 }
 
 .navbar {
-    display: flex;
+    box-shadow: 0 5px 20px  var(--secundary-color);
 }
 
-.navbar a {       
-    position: relative;
-    font-size: 0.8rem;    
-    text-transform: uppercase;
+.navbar a {
     font-weight: 550;
-    color: var(--text-color-dark);
+    color: black;
+
 }
 
 .navbar li:nth-child(4){
     background: var(--primary-color);
-    border-radius: 0.2rem;   
+    border-radius: 3px;   
 }
 
 .navbar li:nth-child(n - 4){
-    padding: 8px 17px;
+    padding: 4px 12px;
 }
 
 .navbar a::after {
     width: 0%;
     height: 2.5px;
-    border-radius: 0.2rem;
+    border-radius: 3px;
     position: absolute;
-    content: " ";
     background: var(--primary-color);
     Bottom: 0;
     left: 0; 
     transition: 0.2s ease-in-out;  
 }
 
-.navbar a:hover::after{
-    width: 100%;   
-
-} 
-
-section{
+section {
     padding: 10px 70px;
 }
 
-.home {
+.home-text {
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    min-height: 80vh;
+    min-height: 20vh;
+    display: inline-block;
 }
 
-.home-text h1{
-    font-size: max(22px, 2.8vw);
+.home-text h1 {
     color: var(--primary-color);
-    margin: 0.5rem 0 1.4rem;
-    margin-right: 30rem;
+    font-size: 40px;
 }
 
-.home-text p{
-    font-size: max(14px, 1.2vw);
+.home-text p {
+    font-size: 20px;
+    color:black;
 }
 
 hr {
     margin-bottom: 5px;
     border-right: 30;
     width: 35%;
-    height: 0.01px;    
+    height: 2px;    
     border-color: var(--primary-color);
     background-color: var(--primary-color);
 }
 
-.home a {
-    color: var(--color-variant1b);
-    font-size: 0.9rem;
-    font-weight: 550;
-
-}
-
-/*.efect-dir {
-
-}*/
-
 .efect-esq2 {
     width: 23%;
-  
-    
 }
 
 .efect-esq3 {
     width: 18%;
-
-    
 }
 
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    text-align: center;
-    min-height: 40vh;
-    margin-bottom: 150px;
-}
-
-
-.about-img {
-    width: 120px;
-    display: flex;
-    align-items:center
-}
-
-.about-text h2 {
-    font-size: 2.4rem;
+.about-text h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight: 550;
+    font-size: 25px;
+    color:black;
 }
 
 .about-text p {
-    font-size: 1rem;
-    margin: 0.5rem 0 1.1rem;
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: black;
 }
 
-.heading-section {
-    text-align: center;
+.text {
+    font-size: 18px;
 }
 
 .heading-section h2 {
-    font-size: 1.8rem;
+    padding-bottom: 15px;
+    color: black;
+    font-weight: 550;
+    font-size: 30px;
+    padding-top: 15px;
 }
 
-.section-step-by-step {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-step{
-    height: 400px;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.section-step h4{
-    color: var(--color-variant1);
-    font-size: max(28px, 2.4vw);
-
-}
-
-.animals {
-    display: flex;
-    flex-direction: column;
-    min-height: 170vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.animals-container {    
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    gap: 1.5rem;   
-    margin-top: 2rem;
-    margin-bottom: 120px;
-}
-
-.animals-container .box {
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 0.5rem;
-    box-shadow: 0 5px 9px  var(--secundary-color);
-}
-
-.animals-container img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    object-position: center;
-    padding: 20px;
-    background: var(--color-variant3);
-    border-radius: 0.5rem;
-}
-
-.animals-container .box h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0.5rem 0 0.5rem;
-}
-
-.animals-container .box .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-  
-.animals-container .box .content span {
-    margin: 1rem;
-    padding: 0 1rem;
-    color: var(--color-variant1);
-    font-weight: 650;
-}
-
-.animals-container .box .content a {
-    padding: 0 1rem;
-    margin: 12px;
-    color: var(--text-color-dark);
+#button-card {
+    color: black;
     background-color: var(--primary-color);
-    color: var(--text-color-ligth1);
-    /*border: 1px solid var(--primary-color);*/
-    border-radius: 3px;
-    font-weight: 400;    
+    border-color: var(--primary-color);
 }
 
-.animals-container .box .content a:hover {
-    background-color: var(--primary-color);
-    color: var(--text-color-ligth1);
-    transition: 0.2s all linear;
+#dogs {
+    max-width: 400px;
 }
 
-.banner {
-    background-image: url(/frontend/assets/amigos-pet.jpg);
-    background-size: contain;    
-    height: 55vh;
-    width: 100%;
+.card{
+    border:none;
+    width: 300px;
 }
 
-
-.customers {
-    display: flex;
-    flex-direction: column; 
-   align-items: center;
-   justify-content: center;
-    min-height: 80vh;
-}
-
-.customers-container {  
-    width: 100%;  
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;       
-}
-
-.customers-container  .box {
-    padding: 20px;    
-    border-radius: 0.5rem;
-    text-align: center;
-}
-
-.stars .bx {
-    color: var(--primary-color);
-}
-
-.customers-container .box p {
-    font-size: 0.9rem;
-}
-
-.customers-container .box h2 h3 {    
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0.5rem 0 0.5rem;
-}
-
-.customers-container .box img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.heading h2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
+.user-content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:12px;
 }
 
 .banner-lu {
     width: 30%;
-    margin-bottom: -21px;
+    margin-bottom: -10px;
+    max-width: 300px;
 }
 
-.banner-details {
-    background-image: url(../assets/banner-details.png);
-    background-size: contain;  
-    background-repeat: no-repeat;  
-    height: 55vh;
-    width: 100%;
+.alianca {
+    width: 50px;
 }
 
-.banner-estrategy {
-    display: flex;
-    flex-direction: row;
-    align-items:center;  
-    text-align: center;
-    justify-content: space-around;
-    height: 30vh;
-    width: 100%;
-    
+.col-4 {
+    max-width: 200px;
 }
 
-.banner-estrategy img {
-    width: 180px;
-    margin: 40px;
-    margin-bottom: 30vh;
-
+.banner-strategy {
+    margin-bottom: 20px;
 }
 
-.footer {
-    padding-left: 80px;
-    height: 270px;
-    background-color: var(--secundary-color);
-    box-shadow: 5px 5px 20px  var(--secundary-color);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-    align-items: center;
-    gap: 1.5rem;
+.canais h3 {
+    color: white;
 }
 
-.footer-box h3{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+footer{
+    background-color: #33383c;
+    padding:70px 0px;
+}	       
+
+footer ul li{
+   padding:5px 0px;
 }
 
-.footer-box p {
-    font-size: 0.938rem;
-    margin-bottom: 10px;
+.canais span {
+  color: #FFF; 
+  font-weight: 800; 
+  padding-bottom: 10px; 
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
-.social {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
+.contato li, .canais li a , .expertise li a, .title-footer h3 {
+   color:#FFF;
+   letter-spacing: 2px;
+   text-decoration:none;
+   font-size:15px;
 }
 
-.social a .bx {
-    font-size: 26px;    
-    color: var(--text-color-dark);
-    padding: 8px;
-    background: var(--secundary-color);
+.contato, .expertise, .title-footer {
+    color: white;
 }
 
-.social a .bx:hover{
-    background: var(--secundary-color);
-    color: var(--color-variant1);
+.expertise li {
+   float:left;
 }
 
-.footer-box h3 {
-    font-weight: 550;
-    margin-bottom: 10px;
+.contato, .canais , .expertise {
+   list-style: none;
 }
 
-.footer-box li a {
-    color: var(--text-color-dark);
-    font-size: .8em;
-}
-
-.footer-box li a:hover {
-    color: rgb(24, 23, 23);
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-}
-
-.credits {
-    height: 50px;
-    background-color: var(--text-color-dark);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-    align-items: center;
-    gap: 1.5rem;
-    text-align: center;
-    color: var(--color-variant4);
-    font-size: 0.7rem;
-}
-
-.credits i {
-    font-size: 30px;
-    margin: 5px;   
-    color: var(--text-color-dark); 
-}
-
-
-.title {
-    color: var(--color-variant1);
-}

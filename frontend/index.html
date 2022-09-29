@@ -4,280 +4,269 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/colors.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
-
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <script src="./js/teste.js" defer></script>
-
-    <title>Home Cravo & Canela</title>
+    <title>Cravo & Canela</title>
 </head>
 <body>
-
-    <header class="menu">
-        <a href="#" class="logo">
-            <img src="./assets/logo_cravo_canela2.png" alt="Logo Cravo & Canela">
-        </a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="loginOng.html">ONGs</a></li>
-            <li><a href="#galeria-img">PETs</a></li>
-            <li><a href="loginUsuario.html">Apadrinhe</a></li>
-        </ul>
-    </header>
-
-    <!--Home-->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h1>BEM VINDO!<br>
-                JUNTE-SE A NÓS.</h1>
-                <p>Juntos, construindo um ciclo de colaboração e transformação <br>na vida dos nossos PETs. <br>Confira nossa seção fofura.  <a href="#galeria-img">Saiba mais</a></p>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./assets/logo_cravo_canela2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ongs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Apadrinhe</a>
+            </li>
+          </ul>
         </div>
-        <div class="home-img">
-            <img src="./assets/cravo&canela_pets.png" alt="">
+    </div>
+  </nav>
+    <main>
+      <section class="container" id="container-text">
+        <div class="clearfix">
+          <img src="./assets/cravo&canela_pets.png" class="col-md-6 float-md-end mb-3 ms-md-3 d-none d-lg-block rounded float-end" id="dogs" alt="dogs">
+          <div class="home-text">
+            <h1>BEM VINDO!<br> JUNTE-SE A NÓS.</h1>
+            <p>Juntos, construindo um ciclo de colaboração e transformação <br>na vida dos nossos PETs. <br>Confira nossa seção fofura. Saiba mais.</p>                   
+          </div>
         </div>
-    </section>
-    <hr class="efect-dir">
-
-        <!--Sobre-->
-        <section class="about" id="about">
-            <!--<div class="about-img">
-                <img src="./assets/Group 1704.png" alt="Patinhas de PETs">
-            </div>-->
-            <div class="about-text">
-                <h2>Faça parte da nossa história.</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea atque tempore rerum nihil <br>dolores iure minus dignissimos quod molestiae vel accusamus eos id, voluptates aliquid officia cumque<br> pariatur a officiis. Dolores iure minus dignissimos quod molestiae vel accusamus eos id, voluptates <br>aliquid officia cumquedolores iure minus dignissimos quod molestiae vel accusamus eos id, voluptates aliquid officia cumque</p>
+      </section>
+      <hr class="efect-dir">
+      <section class="container" id="container-about">
+        <div class="about-text align text-center">
+          <h2>Faça parte da nossa história.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea atque tempore rerum nihil <br>dolores iure minus dignissimos quod molestiae vel accusamus eos id, voluptates aliquid officia cumque<br> pariatur a officiis. Dolores iure minus dignissimos quod molestiae vel accusamus eos id, voluptates <br>aliquid officia cumquedolores iure minus dignissimos quod molestiae vel accusamus eos id, voluptates aliquid officia cumque.</p>                   
+        </div>
+      </section>
+      <hr class="efect-esq1">
+      <hr class="efect-esq2">
+      <hr class="efect-esq3">
+      <section class="p-5">
+        <div class="container text-center">
+          <div class="row g-2">
+            <div class="col-xs-2 col-sm-6 col-lg-3 d-flex justify-content-center">
+              <h4 class="card-title">1</h4>
+              <p class="text"><i class='bx bxs-dog'></i> Conheça a história<br> dos nossos PETs.</p>
             </div>
-        </section>
-
-        <hr class="efect-esq1">
-        <hr class="efect-esq2">
-        <hr class="efect-esq3">
-
-        <section class="section-step-by-step" id="step-by-step">
-            <div class="section-step">
-                <div class="step1">
-                    <h4>1</h4>
-                    <p><i class='bx bxs-dog'></i>Conheça a história<br> dos nossos PETs.</p>
-                </div>
-    
-                <div class="step2">
-                    <h4>2</h4>
-                    <p><i class='bx bxs-user-account'></i>Cadastre-se <br> para apadrinhar.</p>
-                </div>
-    
-                <div class="step3">
-                    <h4>3</h4>
-                    <p><i class='bx bx-happy-heart-eyes' ></i>Apadrinhe! <br> Toda ajuda é bem vinda...</p>
-                </div>
-    
-                <div class="step4">
-                    <h4>4</h4>
-                    <p><i class='bx bxl-meta' ></i>Acompanhe <br> os seus afilhados.</p>
-                </div>    
-            </div>   
-        </section>
-
-                <!--Seção fofura-->
-                
-                <section class="animals" id="animals">
-                    <div class="heading-section">
-                        <h2> <a name="galeria-img"> Nossa seção fofura</a></h2>                    
+            <div class="col-xs-2 col-sm-6 col-lg-3 d-flex justify-content-center">
+              <h4 class="card-title">2</h4>
+              <p class="text"><i class='bx bxs-user-account'></i> Cadastre-se <br>para apadrinhar.</p>
+            </div>
+            <div class="col-xs-2 col-sm-6 col-lg-3 d-flex justify-content-center">
+              <h4 class="card-title">3</h4>
+              <p class="text"><i class='bx bx-happy-heart-eyes'></i> Apadrinhe!<br> Toda ajuda é bem vinda...</p>
+            </div>
+            <div class="col-xs-2 col-sm-6 col-lg-3 d-flex justify-content-center">
+              <h4 class="card-title">4</h4>
+              <p class="text"><i class='bx bxl-meta'></i> Acompanhe<br> os seus afilhados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5">
+          <div class="heading-section text-center">
+              <h2>Nossa seção fofura</h2>                    
+          </div>
+          <div class="container">
+              <div class="row g-4">
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                    <div class="card">
+                        <img src="./assets/sexta13.jpg" class="card-img-top" alt="Gato preto">
+                          <div class="card-body">
+                            <h5 class="card-title">Sexta 13</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
+                            <p class="card-price">R$ 15,00</p>
+                            <a href="#" class="btn btn-outline-dark" id="button-card">Apadrinhe</a>
+                          </div>
                     </div>
-    
-                      <!--Container-->
-    
-                    <div class="animals-container" id="animals-container">
-                        <div class="box" id="box">
-                            <img src="./assets/sexta13.jpg" alt="">
-                            <h3>Sexta 13</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
-                            <div class="content" id="content">
-                                <span>R$ 15,00</span>
-                                <a href="#">Apadrinhe</a>
-                            </div>     
-                       </div>
-
-                       <div class="box" id="box">
-                        <img src="./assets/sexta13.jpg" alt="">
-                        <h3>Sexta 13</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
-                        <div class="content" id="content">
-                            <span>R$ 15,00</span>
-                            <a href="#">Apadrinhe</a>
-                        </div>     
-                   </div>
-
-
-                   <div class="box" id="box">
-                    <img src="./assets/sexta13.jpg" alt="">
-                    <h3>Sexta 13</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
-                    <div class="content" id="content">
-                        <span>R$ 15,00</span>
-                        <a href="#">Apadrinhe</a>
-                    </div>     
-               </div>
-
-               <div class="box" id="box">
-                <img src="./assets/sexta13.jpg" alt="">
-                <h3>Sexta 13</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
-                <div class="content" id="content">
-                    <span>R$ 15,00</span>
-                    <a href="#">Apadrinhe</a>
-                </div>     
-           </div>
-
-           <div class="box" id="box">
-            <img src="./assets/sexta13.jpg" alt="">
-            <h3>Sexta 13</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
-            <div class="content" id="content">
-                <span>R$ 15,00</span>
-                <a href="#">Apadrinhe</a>
-            </div>     
-       </div>
-
-       <div class="box" id="box">
-        <img src="./assets/sexta13.jpg" alt="">
-        <h3>Sexta 13</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
-        <div class="content" id="content">
-            <span>R$ 15,00</span>
-            <a href="#">Apadrinhe</a>
-        </div>     
-       </div>               
-    
-    </div>    
-  </section>
-
-          <!--Bonde dos migos-->
-          <section class="banner" id="banner">
-            <div class="banner-img">               
-            </div>
-        </section>
-
-      <!--Seção de depoimentos-->
-    <section class="customers" id="customers">
-        <div class="heading">
-            <h2>Depoimentos</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                    <div class="card">
+                        <img src="./assets/sexta13.jpg" class="card-img-top" alt="Gato preto">
+                          <div class="card-body">
+                            <h5 class="card-title">Sexta 13</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
+                            <p class="card-price">R$ 15,00</p>
+                            <a href="#" class="btn btn-outline-dark" id="button-card">Apadrinhe</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                    <div class="card">
+                        <img src="./assets/sexta13.jpg" class="card-img-top" alt="Gato preto">
+                          <div class="card-body">
+                            <h5 class="card-title">Sexta 13</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
+                            <p class="card-price">R$ 15,00</p>
+                            <a href="#" class="btn btn-outline-dark" id="button-card">Apadrinhe</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                  <div class="card">
+                    <img src="./assets/sexta13.jpg" class="card-img-top" alt="Gato preto">
+                      <div class="card-body">
+                        <h5 class="card-title">Sexta 13</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
+                          <p class="card-price">R$ 15,00</p>
+                          <a href="#" class="btn btn-outline-dark" id="button-card">Apadrinhe</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                    <div class="card">
+                        <img src="./assets/sexta13.jpg" class="card-img-top" alt="Gato preto">
+                          <div class="card-body">
+                            <h5 class="card-title">Sexta 13</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
+                            <p class="card-price">R$ 15,00</p>
+                            <a href="#" class="btn btn-outline-dark" id="button-card">Apadrinhe</a>
+                          </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                    <div class="card">
+                        <img src="./assets/sexta13.jpg" class="card-img-top" alt="Gato preto">
+                          <div class="card-body">
+                            <h5 class="card-title">Sexta 13</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. cumque fugit natus et dignissimos!</p>
+                            <p class="card-price">R$ 15,00</p>
+                            <a href="#" class="btn btn-outline-dark" id="button-card">Apadrinhe</a>
+                        </div>
+                  </div>
+                </div>
         </div>
-         <!--Container-->
-         <div class="customers-container">
-            <div class="box">
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Distincore asperiores quia animi unde recusandae <br>vitae! Quaerat, possimus.</p>
-                <h3>Isabella C.</h3>
-                <img src="./assets/isabella.jpg" alt="">
-            </div>
-
-            <div class="box">
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Distincore asperiores quia animi unde <br>recusandae vitae! Quaerat, possimus.</p>
-                <h3>Priscila</h3>
-                <img src="./assets/priscila.jpg" alt="">
-            </div>
-
-            <div class="box">
-                <div class="stars">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star-half"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Distincore asperiores quia animi <br>unde recusandae vitae! Quaerat, possimus.</p>
-                <h3>Michele F.</h3>
-                <img src="./assets/michele_f.jpeg" alt="">
-            </div>            
-         </div>
     </section>
-
-              <!--Garota propaganda-->
-              <section class="banner-lu" id="banner-lu">
-                <div class="banner-img">  
-                    <img src="./assets/luciana_murata-removebg-preview.png" alt="">            
-                </div>
-            </section>
-
-                      <!--Banner detalhes da marca-->
-          <section class="banner-details" id="banner-details">
-            <div class="details-img"> 
-                          
-            </div>
-        </section>
-
-        <section class="banner-estrategy" id="banner-estrategy">
-            <div class="estrategy-container"> 
-                <h2>Alianças estratégicas</h2>
-                <img src="./assets/logo-gama-academy.png" alt="">
-                <img src="./assets/logo-mckinsey.png" alt="">          
-            </div>
-        </section>
-
-
-
-    <footer class="footer">
-        <div class="footer-box">
-            <h3 class="title">Consultoria Cravo & Canela</h3>
-        <p><b>Acelerando ideias, através de conexões inteligentes.</b></p>
-        <div class="social">
-            <a href="#"><i class='bx bxl-meta' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
+    <section class="customers" id="customers">
+        <div class="heading-section text-center">
+          <h2>Depoimentos</h2>                    
         </div>
-    </div>
-    <div class="footer-box">
-        <h3>Nossa expertise</h3>
-        <li><a href="#">Growth Hacking</a></li>
-        <li><a href="#">Circular Economy</a></li>
-        <li><a href="#">Shared Economy</a></li>        
-        <li><a href="#">Customer Success</a></li>
-        <li><a href="#">Customer Experience</a></li>
-    </div>
-
-
-    <div class="footer-box">
-        <h3>Canais de apoio</h3>
-        <li><a href="#">Blog C&C</a></li>     
-        <li><a href="#">Política de privacidade</a></li>
-        <li><a href="#">Termos de uso</a></li>
-        <li><a href="#">Fale conosco</a></li>
-        <li><a href="#">Trabalhe conosco</a></li>
-
-    </div>
-    <div class="footer-box">
-        <h3>Contato</h3>
-        <div class="contact">
-            <span><i class="bx bxs-map"></i>Rua, Flórida, 0 - SP, Cep: 01010-000</span>
-            <span><i class="bx bxs-phone"></i>+55 11- 99900 0000</span>
-            <span><i class="bx bxs-envelope"></i>cravo&canela@consultoria.com</span>
+        <div class="container mt-5 mb-5">
+          <div class="row g-2">
+              <div class="col-md-4">
+                  <div class="card p-3 text-center px-4">
+                      <div class="user-image">
+                        <img src="assets/isabella.jpg" class="rounded-circle" width="80">
+                      </div>
+                      <div class="user-content">
+                          <h5 class="mb-0">Isabella C</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <div class="ratings">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card p-3 text-center px-4">
+                      <div class="user-image">
+                        <img src="./assets/michele_f.jpeg" class="rounded-circle" width="80">
+                      </div>
+                      <div class="user-content">
+                          <h5 class="mb-0">Michele F</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <div class="ratings">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card p-3 text-center px-4">
+                      <div class="user-image">
+                      <img src="./assets/priscila.jpg" class="rounded-circle" width="80">
+                      </div>
+                      <div class="user-content">
+                          <h5 class="mb-0">Priscila O</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <div class="ratings">
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="banner-strategy" id="banner-strategy">
+      <div class="heading-section text-center">
+        <h2>Alianças estratégicas</h2>                    
+      </div>
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <img src="./assets/logo-gama-academy.png" alt="">
+          </div>
+          <div class="col-4">
+            <img src="./assets/logo-mckinsey.png" alt="">
+          </div>
         </div>
-    </div>
-    </footer> 
-    <div class="credits">
-        <p>Desenvolvido por LovelaceTech - Bootcamp <i class='bx bxl-aws'></i></p>
-    </div>                   
+      </div>
+    </section>
+    <section class="banner-lu" id="banner-lu">
+      <div class="banner-img">  
+          <img src="./assets/luciana_murata-removebg-preview.png" alt="">            
+      </div>
+    </section>
+    </main>
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                <ul class="contato">
+                  <h3>Contato</h3>
+                  <li><i class="bx bxs-map"></i>Rua, Flórida, 0 - SP, Cep: 01010-000</li>
+                  <li><i class="bx bxs-phone"></i>+55 11- 99900 0000</li>
+                  <li><i class="bx bxs-envelope"></i>cravo&canela@consultoria.com</li>
+                 </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <ul class="canais">
+                  <h3>Canais de apoio</h3>
+                  <li><a href="#">Blog C&C</a></li>     
+                  <li><a href="#">Política de privacidade</a></li>
+                  <li><a href="#">Termos de uso</a></li>
+                  <li><a href="#">Fale conosco</a></li>
+                  <li><a href="#">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <ul class="expertise">
+                    <h3>Nossa expertise</h3>
+                    <li><a href="#">Growth Hacking</a></li>
+                    <li><a href="#">Circular Economy</a></li>
+                    <li><a href="#">Shared Economy</a></li>        
+                </ul>
+            </div>
+        </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

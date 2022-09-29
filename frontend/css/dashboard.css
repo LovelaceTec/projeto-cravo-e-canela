@@ -1,139 +1,14 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif; 
-}
-
-.wrapper {
-    padding-top: 100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    /*position: absolute;*/
-}
-
-.sidebar2 {  
-    padding-right: 20px;  
-    width: 100px;
-    height: 70vh;
-    background: var( --color-variant3);
-    box-shadow: 0 5px 20px  var(--secundary-color);   
-}
-
-.sidebar2 ul {
-    margin-top: 50px;
-}
-
-.sidebar2 ul li {
+.title-column {
     text-align: center;
 }
 
-.sidebar2 ul li a img {
-    height: 35px;
-    margin: 25px;
-    font-size: 22px;
-    cursor: pointer;  
+.text-column {
+    text-align: center;
 }
 
-.sidebar2 ul li:hover, li:active{
-    border-right: 3px solid var(--primary-color);    
-}
-
-.head {    
-    display: flex;
-    padding: 20px 30px;
-}
-
-.head-title span{
-    font-size: 14px;
-    color: var(--color-variant1)
-}
-.head-search {
-    width: 400px;
-    margin-left: 70%;
-}
-
-input {
-    border: none;
-    outline: none;  /*Já inserido no contexto global do reseat*/
-    padding: 7px 13px;
-    border-radius: 15px;
-    background: var(--color-variant3);
-    box-shadow: 0 5px 20px  var(--secundary-color);    
-}
-
-.main {
-   padding-left: 150px;
-}
-
-.card-board {
-    display: flex;
-    padding: 15px 40px;
-}
-
-.card {
-    width: 230px;
+.table-borderless {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding-bottom: 10px;
     height: 100px;
-    padding: 20px;
-    background: var(--secundary-color);
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
-.card-icon {    
-    display: flex;
-}
-
-.card-icon i {
-    margin: 15px 0;
-    cursor: pointer;
-    font-size: 20px;
-    margin-right: 12.5rem;
-    color: var(--color-variant1);
-}
-
-.card-icon img {
-    height: 15px;
-    
-}
-
-card.span {
-    font-size: 12px;
-    color: var(--secundary-color);
-}
-
-.card h5 {
-    margin-top: 5px;
-}
-
-.balance {
-    width: 87%;
-    margin: 0 40px;
-    background: var(--secundary-color);
-    padding: 20px 30px;
-    border-radius: 10px;
-}
-
-.balance-details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.topic {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.balance-details li {
-    margin: 8px 0;
-}
-
-.balance-details li a {
-    font-size: 18px;
-    color: var(--text-color-dark);
-    font-size: 400;
 }

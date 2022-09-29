@@ -1,89 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/dashboard.css">
-    <title>D2 - Padrinhos</title>   
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Cravo & Canela</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar2">
-            <ul>
-                <li class="active"><a href="#"><img src="./assets/Group 1704.png" alt=""></a></li>
-                <li class="active"><a href="#"><img src="./assets/bi_meta.png" alt=""></a></li>
-                <li class="active"><a href="#"><img src="./assets/bi_meta.png" alt=""></a></li>
-                <li class="active"><a href="#"><img src="./assets/bi_meta.png" alt=""></a></li>
-                <li class="active"><a href="#"><img src="./assets/bi_meta.png" alt=""></a></li>
-                <li class="active"><a href="#"><img src="./assets/bi_meta.png" alt=""></a></li>        
-            </ul>        
-        </div>
-
-        <div class="main">
-            <div class="head">
-                <div class="head-title">
-                    <h2>Padrinhos</h2>
-                    <span>Visão geral</span>
-                </div>
-            </div>
-            <div class="main-board">
-                <div class="card-board">
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <a href="#"><img src="./assets/bi_meta.png" alt=""></a>
-                        </div>
-                        <span>Total de apadrinhados</span>
-                        <h5 class="num"></h5>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <a href="#"><img src="./assets/bi_meta.png" alt=""></a>
-                        </div>
-                        <span>Valor total em apadrinhamento</span>
-                        <h5 class="num"></h5>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-icon">
-                            <a href="#"><img src="./assets/bi_meta.png" alt=""></a>
-                        </div>
-                        <span>% Metas em andamento</span>
-                        <h5 class="num">80%</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="head">
-                <div class="head-title">
-                    <h2>Movimentações</h2>
-                    <span class="num">Total investido: </span>
-                </div>
-            </div>
-            
-            <div class="balance">
-                <!-- <table id="tabelaApadrinhamento">
-                    <thead>
-                        <tr>
-                            <th>Data da Movimentação</th>
-                            <th>Pet</th>
-                            <th>ONG</th>
-                            <th>Valor Doado</th>
-                        </tr>
-                    </thead>
-                    <tbody id="html">
-                    </tbody>
-                </table> -->
-                
-                <p id="showData"></p>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo_cravo_canela2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ongs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apadrinhe</a>
+                </li>
+            </ul>
             </div>
         </div>
-    </div>    
+    </nav>
+    <main>
+        <section class="container">
+            <div class="container py-5">
+                <h2>Dashboard - Padrinhos</h2>
+                <h5>Visão Geral</h5>
+                <div class="row py-5">
+                    <div class="col-md-3">
+                        <div class="column">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th class="title-column">Total de apadrinhados</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-column">1</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="column">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th class="title-column">Valor total em padrinhamento</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-column">R$ 15,00</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="column">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th class="title-column">% Metas em andamento</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-column">80%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            <div class="container py-5">
+                <h2>Movimentações</h2>
+                <h5>Total investido</h5>
+                <div class="row py-5">
+                    <div class="column">
+                        <table class="table table-borderless" id="dadosTabela">
+                            <tr>
+                                <th>Data da movimentação</th>
+                                <th>Pet</th>
+                                <th>ONG</th>
+                                <th>Valor Doado</th>
+                            </tr>
+                            <tr>
+                                <td>01 - 05 -2022</td>
+                                <td>Sexta 13</td>
+                                <td>Pago</td>
+                                <td>R$ 1.500,00</td>
+                            </tr>
+                            <tr>
+                                <td>01 - 05 -2022</td>
+                                <td>Mingau</td>
+                                <td>Pendente</td>
+                                <td>R$ 500,00</td>
+                            </tr>
+                            <tr>
+                                <td>01 - 05 -2022</td>
+                                <td>Thor</td>
+                                <td>Pendente</td>
+                                <td>R$ 700,00</td>
+                            </tr>
+                            <tr>
+                                <td>01 - 05 -2022</td>
+                                <td>Costelinha</td>
+                                <td>Pago</td>
+                                <td>R$ 1.000,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                    <ul class="contato">
+                        <h3>Contato</h3>
+                        <li><i class="bx bxs-map"></i>Rua, Flórida, 0 - SP, Cep: 01010-000</li>
+                        <li><i class="bx bxs-phone"></i>+55 11- 99900 0000</li>
+                        <li><i class="bx bxs-envelope"></i>cravo&canela@consultoria.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <ul class="canais">
+                        <h3>Canais de apoio</h3>
+                        <li><a href="#">Blog C&C</a></li>     
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <ul class="expertise">
+                        <h3>Nossa expertise</h3>
+                        <li><a href="#">Growth Hacking</a></li>
+                        <li><a href="#">Circular Economy</a></li>
+                        <li><a href="#">Shared Economy</a></li>        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
-<script src="./js/padrinho.js" defer></script> 
-
-
 </html>
