@@ -102,25 +102,27 @@ card_one();
 
 
 function card_two() {
-
     const options = {
-        method: "GET",
-        mode: "cors",
-        headers: {
-            'content-type': 'application/json',
+      method: "GET",
+      mode: "cors",
+      headers: {
+        "content-type": "application/json",
+      },
+    };
+    fetch(urlApadrinhamento, options)
+      .then((response) => response.json())
+      .then((data) => {
+          console.log(data)
+        let contarAnimais = 0;
+        for (const i in data) {
+          if (data[i] === data.animal) {
+            contarAnimais++;
+          }
         }
-    }
-    fetch(urlApadrinhamento, options).then(response => {
-        return response.json();
-
-    }).then((data) => {
-            const animais = Object.keys(data).reduce(function (previous, animal) {
-                return previous + data[animal].value;
-            }, 0);
-
-            valoresCards[0].innerHTML = animais
-        })
-
-}
-
-card_two();
+  
+      
+        valoresCards[0].innerHTML = contarAnimais;
+      });
+  }
+  
+  card_two();
