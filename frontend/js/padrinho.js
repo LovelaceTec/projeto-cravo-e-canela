@@ -114,12 +114,12 @@ function card_two() {
         return response.json();
 
     }).then((data) => {
-        const animais = Object.keys(data).reduce(function (previous, animal) {
-            return previous + data[animal].value;
-        }, 0);
+            const animais = Object.keys(data).reduce(function (previous, animal) {
+                return previous + data[animal].value;
+            }, 0);
 
-        valoresCards[0].innerHTML = animais
-    })
+            valoresCards[0].innerHTML = animais
+        })
 
 }
 

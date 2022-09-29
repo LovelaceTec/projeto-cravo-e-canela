@@ -54,7 +54,7 @@ formLogin.onsubmit = function (e) {
       const ongs = dataOngs.filter((ong) => {
         return (
           ong.email_ong === e.target.email.value,
-          ong.senha_ong ===e.target.senha.value
+          ong.email_senha ===e.target.senha.value
 
         ) 
       });

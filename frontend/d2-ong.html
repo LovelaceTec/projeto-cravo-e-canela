@@ -1,135 +1,127 @@
-
-<!--  Fazer o painel do Admin com inserção manual dos valores enviados via PIX ou verificar forma de automação direta pela aplicação desta parte de forma simples -->
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/d2_ong.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/colors.css">
-
-    <script src="./js/admin.js" defer></script>
-    <script src=""></script>
-    <title>Dashboard Admin C&C</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/d2_ong.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Cadastro animal</title>
 </head>
-<body>    
-
-    <header class="menu">
-        <a href="#" class="logo">
-            <img src="./assets/logo_cravo_canela2.png" alt="Logo Cravo & Canela">
-        </a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">ONGs</a></li>
-            <li><a href="#">PETs</a></li>
-            <li><a href="#">Apadrinhe</a></li>
-        </ul>
-    </header>
-
-    <form method="POST" action="###">
-
-        <main class="card1">
-            <div class="title">
-                <h2 class="itens">ONG, cadastre sua campanha</h2>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo_cravo_canela2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ongs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apadrinhe</a>
+                </li>
+            </ul>
             </div>
-
-            <section>
-                <div class="input-card">
-                    <label for="data-inicio-card" >Início da campanha</label>
-                    <input type="date" id="data-inicio-card" >
-                </div>    
-             
-                <div class="input-card">
-                    <label for="data-fim-card" >Final da campanha</label>
-                    <input type="date" id="data-fim-card" >
-                </div>  
-
-                <div class="input-card">
-                    <label for="total-campanha-card" >Valor total da campanha</label>
-                    <input type="number" id="total-campanha-car" placeholder="Valor total">
-                </div>
-            </section>
-
-            <section>
-                          
-                <div class="input-card">
-                    <label for="descritivo-card" >Descreva sobre a causa: </label>
-                    <textarea name="descritivo-card" id="descritivo-card" cols="15" rows="5" maxlength = "320" minlength= "50" required = "" placeholder = "Descrição com mínimo 50 e máximo 320 caracteres"></textarea>
-                </div>    
-            </section>
-
-            <section class="image">
-                <label for="#" class="picture" tabindex="0">
-                    <input type="file" accept="image/*" class="picture__input">
-                    <span class="picture__image">Selecione a foto do PET</span>
-                </label>
- 
-            </section>
-
-
-            <section>            
-                <div class="card">
-                    <div class="input-card">
-                        <label for="nome-pet-card" >Nome do PET</label>
-                        <input type="text" id="nome-pet-card" placeholder="Nome do pet">
+        </div>
+    </nav>
+    <main class="form-v5">
+        <div class="page-content">
+            <div class="form-v5-content">
+                <form class="form-detail" action="#" method="post">
+                    <h2>ONG cadastre sua campanha</h2>
+                    <div class="form-row">
+                        <label for="inicio-campanha">Início da campanha</label>
+                        <input type="date" name="inicio-campanha" id="inicio-campanha" class="input-text" placeholder="Inicio da campanha" required>
+                        <i class="fas fa-user"></i>
                     </div>
-        
-                    <div class="input-card">
-                        <label for="idade-pet-card" >Idade</label>
-                        <input type="number" id="idade-pet-card" placeholder="Idade do pet">
-                    </div>   
-                    
-                    <div class="input-card">
-                        <label for="tipo-pet-card" >Espécie</label>
-                        <select name="tipo-pet-card" id="tipo-pet-card">
-                            <option value="">Mamíferos</option>
-                            <option value="">Répteis</option>
-                            <option value="">Peixes</option>
-                            <option value="">Aves</option>
-                        </select>
-                    </div>              
-                        
-                    <div class="btn-card">
-                    <button type = "submit" onclick="cadastro.salvar()" class="btn-salvar" id="btn-um">Salvar</button>
-        
-                    <button onclick="cadastro.cancelar()" class="btn-cancelar">Limpar</button>
+                    <div class="form-row">
+                        <label for="final-campanha">Final da campanha</label>
+                        <input type="date" name="final-campanha" id="final-campanha" class="input-text" placeholder="Final da campanha" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="valor-total">Valor total da campanha</label>
+                        <input type="text" name="valor-total" id="valor-total" class="input-text" placeholder="Valor total" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="descritivo-card">Descreva a sua causa:</label>
+                        <input type="text" name="descritivo-card" id="description" class="input-text" cols="15" rows="5" maxlength="50" placeholder="Descreva de forma breve." required=""></input>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="nome-pet">Nome do PET</label>
+                        <input type="text" name="nome-pet" id="nome-pet" class="input-text" placeholder="Nome pet" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="idade-pet">Idade do PET</label>
+                        <input type="text" name="idade-pet" id="idade-pet" class="input-text" placeholder="Idade pet" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="especie-pet">Espécie do PET</label>
+                        <input type="text" name="especie-pet" id="especie-pet" class="input-text" placeholder="Especie pet" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="especie-pet">Adiciona uma foto do PET</label>
+                        <input type="file" name="foto-pet" id="foto-pet" class="input-text" placeholder="Foto pet" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row-last">
+                        <input type="submit" name="registre" class="register" value="Salvar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                    <ul class="contato">
+                        <h3>Contato</h3>
+                        <li><i class="bx bxs-map"></i>Rua, Flórida, 0 - SP, Cep: 01010-000</li>
+                        <li><i class="bx bxs-phone"></i>+55 11- 99900 0000</li>
+                        <li><i class="bx bxs-envelope"></i>cravo&canela@consultoria.com</li>
+                    </ul>
                 </div>
-            </section>
-
-
-
-            <section>     
-                <div class="content-table">
-                    <table border="1">
-                        <thead>              
-                            <th>Data de início</th>
-                            <th>Data final</th>
-                            <th>R$ Total da campanha</th>
-                            
-                            <th>Nome do pet</th>
-                            <th>Idade</th>
-                            <th>Espécie</th>
-
-                            <th>R$ Total arrecadado</th>
-                            <th>% Meta</th>
-                            <th>Ações</th>
-                        </thead>
-                        <tbody id="tbody">
-                        </tbody>                
-                    </table>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <ul class="canais">
+                        <h3>Canais de apoio</h3>
+                        <li><a href="#">Blog C&C</a></li>     
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
                 </div>
-            </section>        
-        </main>   
-    </form>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <ul class="expertise">
+                        <h3>Nossa expertise</h3>
+                        <li><a href="#">Growth Hacking</a></li>
+                        <li><a href="#">Circular Economy</a></li>
+                        <li><a href="#">Shared Economy</a></li>        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
