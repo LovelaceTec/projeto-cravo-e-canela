@@ -1,38 +1,112 @@
-
-
-<!--  Falta prototipar  o form de acesso para a ONG retificar dados cadastrais -->
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <title>d2- ONG </title>
+    <link rel="stylesheet" href="./css/d2_ong.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Cadastro ong</title>
 </head>
 <body>
-    <div class="container">
-        <nav>Navbar</nav>
-
-        <main>Main - Bainner doguinhos e chamada</main>
-
-        <section class="section1"> Section0 / Sobre</section>
-
-        <div class="sidebar">Recadinho</div>
-
-        <section class="section2"> Formulário de cadastro</section>
-
-        <section class="section3">Up load da imagem do animal</section>
-
-        <section class="section3"> Imagem carregada
-            <div> Section1 / Galeria</div>
-        </section>
-
-        <footer>Footer</footer>
-
-    </div>
-    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo_cravo_canela2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ongs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apadrinhe</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="form-v5">
+        <div class="page-content">
+            <div class="form-v5-content">
+                <form class="form-detail" action="#" method="post">
+                    <h2>ONG cadastre sua ONG</h2>
+                    <div class="form-row">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" name="cnpj" id="cnpj" class="input-text" placeholder="Informe seu CNPJ" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="nome-empresa">Nome</label>
+                        <input type="text" name="nome-empresa" id="nome-empresa" class="input-text" placeholder="Nome da empresa" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="gestor">Gestor Responsável</label>
+                        <input type="text" name="gestor" id="gestor" class="input-text" placeholder="Gestor responsável" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" class="input-text" placeholder="cpf" required=""></input>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="pix">PIX</label>
+                        <input type="text" name="pix" id="pix" class="input-text" placeholder="Pix empresa" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-row-last">
+                        <input type="submit" name="registre" class="register" value="Cadastre">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                    <ul class="contato">
+                        <h3>Contato</h3>
+                        <li><i class="bx bxs-map"></i>Rua, Flórida, 0 - SP, Cep: 01010-000</li>
+                        <li><i class="bx bxs-phone"></i>+55 11- 99900 0000</li>
+                        <li><i class="bx bxs-envelope"></i>cravo&canela@consultoria.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <ul class="canais">
+                        <h3>Canais de apoio</h3>
+                        <li><a href="#">Blog C&C</a></li>     
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <ul class="expertise">
+                        <h3>Nossa expertise</h3>
+                        <li><a href="#">Growth Hacking</a></li>
+                        <li><a href="#">Circular Economy</a></li>
+                        <li><a href="#">Shared Economy</a></li>        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

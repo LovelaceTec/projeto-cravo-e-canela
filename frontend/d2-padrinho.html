@@ -1,3 +1,163 @@
-
-
-<!--  Falta prototipar  o form de t5ransação do PIX para apadrinhamento do animal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/d2-padrinho.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Apadrinhamento</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo_cravo_canela2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ongs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apadrinhe</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row m-0" id="payment">
+                <div class="col-lg-7 pb-5 pe-lg-5">
+                    <div class="row">
+                        <div class="col-12 p-5">
+                            <img src="/frontend/assets/cat-2934720_1920.jpg"
+                                alt="">
+                        </div>
+                        <div class="row m-0 bg-light">
+                            <div class="col-md-4 col-6 ps-30 pe-0 my-4">
+                                <p class="text">Nome</p>
+                                <p class="h5 m-0">Sexta 13</p>
+                            </div>
+                            <div class="col-md-4 col-6  ps-30 my-4">
+                                <p class="text">Idade</p>
+                                <p class="h5 m-0">3</p>
+                            </div>
+                            <div class="col-md-4 col-6 ps-30 my-4">
+                                <p class="text">Espécie</p>
+                                <p class="h5 m-0">Mamíferos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 p-0 ps-lg-4">
+                    <div class="row m-0">
+                        <div class="col-12 px-4">
+                            <div class="d-flex align-items-end mt-4 mb-2">
+                                <p class="h4 m-0"><span class="pe-1">Sexta 13</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="textmuted">Quantidade</p>
+                                <p class="fs-14 fw-bold">1</p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="textmuted">Subtotal</p>
+                                <p class="fs-14 fw-bold"><span class="fas fa-dollar-sign pe-1"></span>R$ 15,00</p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <p class="textmuted fw-bold">Total</p>
+                                <div class="d-flex align-text-top ">
+                                    <span class="fas fa-dollar-sign mt-1 pe-1 fs-14 "></span><span class="h4">15,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0">
+                            <div class="row bg-light m-0">
+                                <div class="col-12 px-4 my-4">
+                                    <p class="fw-bold">Detalhes do cartão</p>
+                                </div>
+                                <div class="col-12 px-4">
+                                    <div class="d-flex  mb-4">
+                                        <span class="">
+                                            <p class="text-muted">Número cartão</p>
+                                            <input class="form-control" type="text" value="1234 5678 9123 4567"
+                                                placeholder="1234 5678 9012 3456">
+                                        </span>
+                                        <div class=" w-100 d-flex flex-column align-items-end">
+                                            <p class="text-muted">Expira</p>
+                                            <input class="form-control2" type="text" value="04/2028" placeholder="MM/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-5">
+                                        <span class="me-5">
+                                            <p class="text-muted">Cardholder name</p>
+                                            <input class="form-control" type="text" value="Ada Lovelace"
+                                                placeholder="Name">
+                                        </span>
+                                        <div class="w-100 d-flex flex-column align-items-end">
+                                            <p class="text-muted">CVC</p>
+                                            <input class="form-control3" type="text" value="123" placeholder="XXX">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-12  mb-4 p-0">
+                                    <div class="btn btn-warning">Apadrinhe<span class="fas fa-arrow-right ps-2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                    <ul class="contato">
+                        <h3>Contato</h3>
+                        <li><i class="bx bxs-map"></i>Rua, Flórida, 0 - SP, Cep: 01010-000</li>
+                        <li><i class="bx bxs-phone"></i>+55 11- 99900 0000</li>
+                        <li><i class="bx bxs-envelope"></i>cravo&canela@consultoria.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <ul class="canais">
+                        <h3>Canais de apoio</h3>
+                        <li><a href="#">Blog C&C</a></li>     
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <ul class="expertise">
+                        <h3>Nossa expertise</h3>
+                        <li><a href="#">Growth Hacking</a></li>
+                        <li><a href="#">Circular Economy</a></li>
+                        <li><a href="#">Shared Economy</a></li>        
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
