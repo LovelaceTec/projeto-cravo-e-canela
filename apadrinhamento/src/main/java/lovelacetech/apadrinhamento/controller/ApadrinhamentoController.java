@@ -95,7 +95,5 @@ public class ApadrinhamentoController {
     public ArrayList<SomatoriaPet> somatoriaPorIdPet(@PathVariable Integer id_pet) {
     	return service.somatoriaPorIdPet(id_pet);
     }
-	
-	
-	
+    
 }
