@@ -51,13 +51,14 @@ formLogin.onsubmit = function (e) {
   })
     .then((response) => response.json())
     .then((dataApadrinhadores) => {
+      console.log(dataApadrinhadores)
       const apadrinhadores = dataApadrinhadores.filter((apadrinhador) => {
         return (
-          apadrinhador.nome_usuario === e.target.email.value &&
-          apadrinhador.senha_usuario === e.target.senha.value
+          apadrinhador.email_pessoa === e.target.email.value &&
+          apadrinhador.senha_pessoa === e.target.senha.value
         );
       });
-
+      console.log(apadrinhadores)
       if (apadrinhadores.length === 0) {
         alert("Usuário ou senha inválidos");
       } else if (apadrinhadores.length > 1) {
