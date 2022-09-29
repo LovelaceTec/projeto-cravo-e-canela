@@ -2,7 +2,7 @@ const nomePadrinho = document.getElementById('padrinho');
 const nomeOng = document.getElementById('ong');
 const totalApadrinhados = document.getElementById('total_apadrinhados');
 const corpo = document.getElementById('corpo');
-const card = document.getElementsByClassName('card');
+const card = document.getElementsByClassName('text-column');
 const valoresCards = document.getElementsByClassName('num');
 
 const url = `http://localhost:8080/apadrinhamento/${localStorage.getItem('apadrinhador_id')}`;
@@ -10,15 +10,18 @@ const urlSomatoriaPessoa = `http://localhost:8080/somatoria/idpessoa/${localStor
 const urlApadrinhamento = `http://localhost:8080/apadrinhamento/${localStorage.getItem('apadrinhador_id')}`;
 
 window.onload = function(){
+   
+    trazerDados();
     console.log('Onload disparado!');
 }
 
 function trazerDados() {
+    debugger;
 
     const options = {
         method: "GET",
         mode: "cors",
-        headers: {  
+        headers: {
             'content-type': 'application/json',
         }
     }
@@ -33,58 +36,48 @@ function trazerDados() {
         })
         .catch(function (e) {
             console.log('Deu erro!');
-        })
+        });
+    
+    
     function addRows(jsonData) {
+        debugger;
         
 
-        const nomePet = jsonData[1].nome_pet
-        console.log('Está parando aqui 1');
-        const nomeOng = jsonData[2].nome_ong
+        const nomePet = jsonData.animal.nome_pet
+        const nomeOng = jsonData.ong.nome_ong
         const dataMov = jsonData.data_apadrinhamento
-        const valor = jsonData[3].valor
-        console.log(nomePet);
-        console.log(nomeOng);
-        console.log(dataMov);
-        console.log(valor);
+        const valor = jsonData.valor
+      
         let col=[];
-        let colunas = [dataMov, nomePet, nomeOng, valor];
-        for (let i = 0; i < jsonData.length; i++) {
-            console.log('ESTÁ PARANDO AQUI!');
-            for (let chave in jsonData[i]) {
-                if (chave == dataMov || chave == nomePet || chave == nomeOng || chave == valor) {
-                    if (col.indexOf(chave) === -1) {
-                        col.push(chave);
-                    }
-                }
-            }
-        }
+        let cabecalho = ["Nome" , "Ong" , "Data" , "Valor"]
+        let valores = [nomePet, nomeOng, dataMov, valor];
+       
         const table = document.createElement("table");
         let tr = table.insertRow(-1);                   // table row.
 
-        for (let i = 0; i < col.length; i++) {
+        for (let i = 0; i < cabecalho.length; i++) {
             let th = document.createElement("th");      // table header.
-            th.innerHTML = col[i];
+            th.innerHTML = cabecalho[i];
             tr.appendChild(th);
         }
-        for (let i = 0; i < colunas.length; i++) {
 
-            tr = table.insertRow(-1);
-    
-            for (let j = 0; j < col.length; j++) {
-                let tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = dado[i][col[j]];
-            }
-    
-            // Now, add the newly created table with json data, to a container.
-            const divShowData = document.getElementById('showData');
-            divShowData.innerHTML = "";
-            divShowData.appendChild(table);
-    
+        tr = table.insertRow(-1);                   // table row.
+
+        for (let i = 0; i < valores.length; i++) {
+            let th = document.createElement("th");      // table header.
+            th.innerHTML = valores[i];
+            tr.appendChild(th);
         }
+
+        const divShowData = document.getElementById('showData');
+        divShowData.innerHTML = "";
+        divShowData.appendChild(table);
+
+       
     }
 }
 
-trazerDados();
+//trazerDados();
 
 function card_one() {
 
