@@ -21,108 +21,118 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ongs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Apadrinhe</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./loginOng.html">Ongs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apadrinhe">Pets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apadrinhe">Apadrinhe</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./loginUsuario.html">Login Usuario</a>
+                    </li>            
+                    <li class="nav-item">
+                      <a class="nav-link" href="./loginUsuario.html">Cadastre-se Usuário</a>
+                    </li>
+                  </ul>
             </div>
         </div>
     </nav>
     <main>
         <section class="container">
             <div class="container py-5">
-                <h2>Dashboard - Padrinhos</h2>
-                <h5>Visão Geral</h5>
-                <div class="row py-5">
-                    <div class="col-md-3">
-                        <div class="column">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="title-column">Total de apadrinhados</th>
-                                </tr>
-                                <tr>
-                                    <td class="text-column">1</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="column">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="title-column">Valor total em padrinhamento</th>
-                                </tr>
-                                <tr>
-                                    <td class="text-column">
-                                        <h5 class="num"></h5>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="column">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <th class="title-column">% Metas em andamento</th>
-                                </tr>
-                                <tr>
-                                    <td class="text-column">80%</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="title-pagina">Bem-vindo, Padrinho!</h2>
+                <h5 class="text-pagina">Aqui estão as suas informações, do seu apadrinhado e as suas movimentações</h5>
+            </div>
         </section>
         <section class="container">
             <div class="container py-5">
-                <h2>Total investido</h2>
-                <h5 class="num"></h5>
-                <div class="row py-5">
-                    <div class="column">
-                        <!-- <table class="table table-borderless" id="dadosTabela">
-                            <tr>
-                                <th>Data movimentação</th>
-                                <th>Pet</th>
-                                <th>ONG</th>
-                                <th>Valor Doado</th>
-                            </tr>
-                            <tr>
-                                <td>01 - 05 -2022</td>
-                                <td>Sexta 13</td>
-                                <td>Pago</td>
-                                <td>R$ 1.500,00</td>
-                            </tr>
-                            <tr>
-                                <td>01 - 05 -2022</td>
-                                <td>Mingau</td>
-                                <td>Pendente</td>
-                                <td>R$ 500,00</td>
-                            </tr>
-                            <tr>
-                                <td>01 - 05 -2022</td>
-                                <td>Thor</td>
-                                <td>Pendente</td>
-                                <td>R$ 700,00</td>
-                            </tr>
-                            <tr>
-                                <td>01 - 05 -2022</td>
-                                <td>Costelinha</td>
-                                <td>Pago</td>
-                                <td>R$ 1.000,00</td>
-                            </tr>
-                        </table> -->
-                        <p id="showData"></p>
+                <h2 class="title-dashboard">Dashboard - Padrinhos</h2>
+                <h5 class="text-dashboard">Visão Geral</h5>
+                <div class="container">
+                    <div class="row g-4">
+                      <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                          <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Total de apadrinhados</h5>
+                                  <p class="card-text">1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                            <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Valor total em padrinhamento</h5>
+                                    <p class="card-text">R$ 15,00</p>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                            <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Participante das campanhas</h5>
+                                    <p class="card-text">3</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="container py-5">
+                <h2 class="title-dashboard">Movimentações</h2>
+                <h5 class="text-dashboard">Total investido</h5>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                          <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Data movimentação</h5>
+                                  <p class="card-text">01 - 05 -2022</p>
+                                  <p class="card-text">01 - 05 -2022</p>
+                                  <p class="card-text">01 - 05 -2022</p>
+                                  <p class="card-text">01 - 05 -2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                            <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Pet</h5>
+                                    <p class="card-text">Sexta 13</p>
+                                    <p class="card-text">Mingau</p>
+                                    <p class="card-text">Thor</p>
+                                    <p class="card-text">Costelinha</p>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                            <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Ong</h5>
+                                    <p class="card-text">Club Animal</p>
+                                    <p class="card-text">Club Animal</p>
+                                    <p class="card-text">Gatomania</p>
+                                    <p class="card-text">Pet Amor</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-lg-3 d-flex">       
+                            <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Total</h5>
+                                    <p class="card-text">R$ 1.500,00</p>
+                                    <p class="card-text">R$ 500,00</p>
+                                    <p class="card-text">R$ 700,00</p>
+                                    <p class="card-text">R$ 1.000,00</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,7 +163,6 @@
                     <ul class="expertise">
                         <h3>Nossa expertise</h3>
                         <li><a href="#">Growth Hacking</a></li>
-                        <li><a href="#">Circular Economy</a></li>
                         <li><a href="#">Shared Economy</a></li>        
                     </ul>
                 </div>
@@ -161,6 +170,5 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="./js/padrinho.js" defer></script>
 </body>
 </html>
