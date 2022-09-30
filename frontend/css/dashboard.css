@@ -23,6 +23,7 @@
     background-color: lightgrey;
     border-radius: 20px;
 }
+
 .card-title {
     text-align: center;
     font-weight: 520;
@@ -31,3 +32,4 @@
 #info-apadrinhadores {
     padding-bottom: 20px;
 }
+
