@@ -69,7 +69,8 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
  
 
 #### Instalacao
-
+Ambiente ECS2 do tipo t2 micro, com Mysql, PHP e http.
+Criado bash para realizar o deploy do frontend (https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/ScriptsAWS/deploy_front.sh)
 <br> 
 
  
@@ -97,6 +98,70 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
 #### Endpoints
 
+Para ONGs
+- GET
+/ong
+- PUT
+/ong
+- POST
+/ong
+- GET
+/ong/{id}
+- DELETE
+/ong/{id}
+
+
+Para apadrinhamentos
+- GET
+/apadrinhamento
+- PUT
+/apadrinhamento
+- POST
+/apadrinhamento
+- GET
+/somatoria/idpet/{id_pet}
+/somatoria/idpessoa/{id_pessoa}
+/somatoria/idong/{id_ong}
+/apadrinhamento/{id}
+/apadrinhamento/idong/{id_ong}
+- DELETE
+/apadrinhamento/{id}
+
+
+Para apadrinhadores
+- GET
+/apadrinhadores
+/apadrinhadores/{id}
+- PUT
+/apadrinhadores
+- POST
+/apadrinhadores
+- DELETE
+/apadrinhadores/{id}
+animais-controller
+
+Para animais
+- GET
+/animais
+/animais/{id}
+- PUT
+/animais
+- POST
+/animais
+- DELETE
+/animais/{id}
+
+Para administrador
+- GET
+/administrador
+/administrador/{id_adm}
+- PUT
+/administrador
+- POST
+/administrador
+- DELETE
+/administrador/{id}
+
 <br>
 
 
@@ -105,8 +170,13 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 <br>
 
 
-#### Clound
+#### Cloud
+-API
+Uso de AWS Elastic Beanstalk e Docker para ralizar o deploy. O ambiente é um EC2 do tipo micro t2, AWS Linux com Java 11 e Maven 3.8 e Elastic IP.
+A imagem do docker está disponível no Docker Hub na tag priscilaco/lovelace_api.
 
+-Banco de Dados
+AWS RDS do tipo micro t3 MySQL Community 8 em AWS Linux.
 <br>
  
 #### Agradecimentos
