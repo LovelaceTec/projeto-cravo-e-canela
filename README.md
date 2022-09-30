@@ -39,8 +39,8 @@
 
 #### O projeto
 
-<p>O projeto Cravo & Canela é inspirado no serviço de consultoria especializada em apadrinhamento de animais voltados a organizações do terceiro setor para maior expertise na captação de renda e manutenção de ONGs que objetivam a assitência e tratamento de animais de rua.
-Através da aplicação é possível que ONGs cadastrem suas campanhas e causas relacionadas à PETs e com edsa divulgação é possível maior alcance de pessoas interessadas em ajudar estes animais, apadrinhando um ou mais animais pelo período de tempo desejado enquanto a campanha estiver sendo veiculada no site. </p>
+<p>O projeto Cravo & Canela é inspirado no serviço de consultoria especializada em apadrinhamento de animais voltados a organizações do terceiro setor para maior expertise na captação de renda e manutenção de ONGs que objetivam a assistência e tratamento de animais de rua.
+Através da aplicação é possível que ONGs cadastrem suas campanhas e causas relacionadas à PETs e com esta divulgação é possível maior alcance/visibilidade de pessoas interessadas em ajudar estes animais, apadrinhando um ou mais animais pelo período de tempo desejado enquanto a campanha estiver sendo veiculada no site. </p>
 
 <br>
  
