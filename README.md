@@ -194,7 +194,7 @@ AWS RDS do tipo micro t3 MySQL Community 8 em AWS Linux.
  
 #### Contatos
 
-* Isabela Cammerer  - https://www.linkedin.com/in/isabella-ambros-cammerer-912880160/
+* Isabella Cammerer  - https://www.linkedin.com/in/isabella-ambros-cammerer-912880160/
 * Laís Lopes - https://www.linkedin.com/in/laismaas/
 * Luciana Midori - https://www.linkedin.com/in/luciana1992/
 * Michele Farias - 
