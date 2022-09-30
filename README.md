@@ -166,6 +166,16 @@ Para administrador
 
 
 #### Documentacao da API Swagger
+ <p align="center">
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/Swagger/Tela01.PNG" alt="Tela Swagger"/>
+ </p>
+ <p align="center">
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/Swagger/Tela02.PNG" alt="Tela Swagger"/>
+ </p>
+ <p align="center">
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/Swagger/Tela03.PNG" alt="Tela Swagger"/>
+ </p>
+ 
 
 <br>
 
