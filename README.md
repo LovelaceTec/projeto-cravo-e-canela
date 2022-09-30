@@ -7,7 +7,7 @@
 
    #### Gama Academy em parceria com McKinsey&Company - Bootcamp Mulheres em Cloud
 
-<br>  <br/>
+<br> 
 
 #### Sumário
 
@@ -35,7 +35,6 @@
 
   <video src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/breve-apresentacao-projeto.mp4" alt="Video de apresentação da aplicação"></video>
 </p>
-<br/><br/>
  
 <br> 
 
@@ -61,9 +60,9 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
 <p align="center">
 
-  <img src="https://github.com/LaisMaas/gama-bank/blob/master/src/assets/reaccenture-equipe.png" alt="Unform"/>
+  <img src="" alt="Unform"/>
 </p>
-<br/><br/>
+<br/>
 
   - [Projects Board](https://github.com/orgs/LovelaceTec/projects/2/views/1) 
 
