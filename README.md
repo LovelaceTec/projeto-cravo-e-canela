@@ -31,7 +31,7 @@
 
  <p align="center">
 
-  <video src="" alt="Breve apresentação da aplicação"></video>
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/home1.png" alt="Breve apresentação da aplicação"/>
 </p>
  
 <br> 
@@ -58,7 +58,7 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
 <p align="center">
 
-  <img src="" alt="Unform"/>
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/kaban-g5.png" alt="kanban do projeto"/>
 </p>
 
 <br/>
@@ -86,7 +86,7 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 #### Documentacao do Banco de Dados
 
  [<p align="center">
-  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy" width="150" heigth="35"/>](https://www.gama.academy/)
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy" width="250" heigth="70"/>](https://www.gama.academy/)
  </p>
  
  - [SQL - Queries apadrinhamento v1](https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/banco_apadrinhe.sql) 
