@@ -41,6 +41,16 @@ html, body {
     transition: 0.2s ease-in-out;  
 }
 
+.cadastro-sucesso {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.cadastro-sucesso span {
+    background-color: var(--primary-color);
+    padding: 8px;
+}
+
 section {
     padding: 10px 70px;
 }
@@ -117,7 +127,7 @@ hr {
     max-width: 400px;
 }
 
-.card{
+.card {
     border:none;
     width: 300px;
 }

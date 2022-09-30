@@ -28,13 +28,12 @@ formCadastro.onsubmit = function (e) {
             },
             body: JSON.stringify({
               nome_ong: e.target.nome_empresa.value,
-              //email_ong: e.target.email.value,
+              email_ong: e.target.email.value,
               cnpj_ong: e.target.cnpj.value,
-              pix_ong: e.target.pix.value
+              telefone_ong: e.target.telefone.value
             }),
           }).then((data) => {
-            alert("usuário cadastrado com sucesso!");
-            window.location.href = "loginOng.html";
+            window.location.href = "ongCadastrada.html";
           });
         }
       });

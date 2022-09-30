@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/d2_ong.css">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <title>Cadastro ong</title>
+    <title>Dashboard - Ong</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -44,37 +43,10 @@
             </div>
         </div>
     </nav>
-    <main class="form-v5">
-        <div class="page-content">
-            <div class="form-v5-content">
-                <form class="form-detail" action="@" method="post">
-                    <h2>ONG cadastre sua ONG</h2>
-                    <div class="form-row">
-                        <label for="cnpj">CNPJ</label>
-                        <input type="text" name="cnpj" id="cnpj" class="input-text" placeholder="Informe seu CNPJ" required>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="form-row">
-                        <label for="nome_empresa">Nome ONG</label>
-                        <input type="text" name="nome_empresa" id="nome_empresa" class="input-text" placeholder="Nome da empresa" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email ONG</label>
-                        <input type="text" name="email" id="email" class="input-text" placeholder="Email ONG" required>
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="form-row">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" name="telefone" id="telefone" class="input-text" placeholder="Telefone empresa" required>
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="form-row-last">
-                        <input type="submit" name="registre" class="register" value="Cadastre">
-                    </div>
-                </form>
-            </div>
-        </div>
+    <main>
+        <section class="container">
+            <h1 class="cadastro-sucesso">ONG CADASTRADA COM <span>SUCESSO!</span></h1>
+        </section>
     </main>
     <footer class="sticky-footer">
         <div class="container">
@@ -108,6 +80,5 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="./js/cadastro-ong-d3.js"></script>
 </body>
 </html>

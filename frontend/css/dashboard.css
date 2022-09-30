@@ -1,3 +1,27 @@
+.border-warning {
+    padding: 10px;
+}
+
+.title-selecionado {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.title-cadastre {
+    text-align: center;
+}
+
+.title-cadastre a {
+    text-decoration: none;
+    color: black;
+}
+
+.title-cadastre span {
+    background-color: var(--primary-color);
+    padding: 7px;
+    font-weight: 600;
+}
+
 .title-pagina {
     size: 20px;
     font-weight: 700;
@@ -23,7 +47,6 @@
     background-color: lightgrey;
     border-radius: 20px;
 }
-
 .card-title {
     text-align: center;
     font-weight: 520;
@@ -32,4 +55,3 @@
 #info-apadrinhadores {
     padding-bottom: 20px;
 }
-
