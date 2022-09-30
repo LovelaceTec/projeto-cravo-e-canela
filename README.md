@@ -1,15 +1,6 @@
 ### Consultoria Cravo & Canela 
    #### McKinsey&Company - Mulheres em Cloud
 
-<br> 
-
-Status do projeto: 
-🚧 Em construção ... 🚧
-
-Previsão de conclusão: 29/09/2022 
- <br/>
-Apresentação: 30/09/2022
-
 <br>  <br/>
 
 #### Sumário
