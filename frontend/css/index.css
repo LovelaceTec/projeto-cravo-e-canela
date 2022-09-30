@@ -153,6 +153,8 @@ hr {
 footer{
     background-color: #33383c;
     padding: 20px 0px;
+    top: 100%;
+    position: sticky;
 }	       
 
 footer ul li{

@@ -9,7 +9,7 @@ const urlSomatoriaPessoa = `http://localhost:8080/somatoria/idpessoa/${localStor
 const urlOng = `http://localhost:8080//apadrinhamento/idong/${localStorage.getItem('id_ong')}`;
 
 window.onload = function(){
-   
+
     trazerDados();
     console.log('Onload disparado!');
 }
@@ -36,21 +36,21 @@ function trazerDados() {
         .catch(function (e) {
             console.log('Deu erro!');
         });
-    
-    
+
+
     function addRows(jsonData) {
         debugger;
-        
+
 
         const nomeOng = jsonData.ong.nome_ong
         const nomePet = jsonData.animal.status_transacao
         const dataMov = jsonData.data_apadrinhamento
         const valor = jsonData.valor
-      
+
         let col=[];
         let cabecalho = ["Nome" , "Ong" , "Data" , "Valor"]
         let valores = [nomePet, nomeOng, dataMov, valor];
-       
+
         const table = document.createElement("table");
         let tr = table.insertRow(-1);                   // table row.
 
@@ -72,7 +72,7 @@ function trazerDados() {
         divShowData.innerHTML = "";
         divShowData.appendChild(table);
 
-       
+
     }
 }
 
