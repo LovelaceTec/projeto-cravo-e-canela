@@ -15,12 +15,11 @@
   - [O projeto](#o-projeto)
   - [Layout](#layout)
   - [Publicacao](#publicacao)
-  - [Kaban](#kanban)
-  - [Requisitos do projeto](#requisitos-do-projeto) 
+  - [Kaban](#kanban) 
   - [Instalacao](#instalacao) 
   - [Tecnologias Frontend](#tecnologias-frontend) 
-  - [Endpoints](#endpoints) 
   - [Documentacao do Banco de Dados](#documentacao-do-banco-de-dados)
+  - [Endpoints](#endpoints) 
   - [Documentacao da API Swegger](#documentacao-da-api-swagger)  
   - [Clound](#clound) 
   - [Agradecimentos](#agradecimentos)
@@ -29,7 +28,7 @@
   
  <br> 
   
- #### ONGs Projeto Cravo&Canela  
+ #### ONGs Projeto Cravo&Canela 
 
  <p align="center">
 
@@ -62,16 +61,14 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
   <img src="" alt="Unform"/>
 </p>
+
 <br/>
 
   - [Projects Board](https://github.com/orgs/LovelaceTec/projects/2/views/1) 
 
-<br>  
+<br> 
  
-#### Requisitos do projeto
 
-<br>
- 
 #### Instalacao
 
 <br> 
@@ -83,15 +80,23 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
   - [CSS](https://www.w3schools.com/css/default.asp) - CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata), utilizada para compor a estilização de sites.
   - [Java script](https://www.w3schools.com/js/default.asp) - Linguagem de programação interpretada e de alto nível com tipagem dinâmica e multiparadigma.
   - [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Bootstrap é a estrutura mais popular do mundo para criar sites responsivos e voltados para dispositivos móveis.
+  -
 <br/>
 
 
-#### Endpoints
+#### Documentacao do Banco de Dados
+
+ [<p align="center">
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy" width="150" heigth="35"/>](https://www.gama.academy/)
+ </p>
+ 
+ - [SQL - Queries apadrinhamento v1](https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/banco_apadrinhe.sql) 
+ - [SQL - Queries apadrinamento v2](https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/banco__apadrinhe_V2.sql) 
 
 <br>
 
 
-#### Documentacao do Banco de Dados
+#### Endpoints
 
 <br>
 
