@@ -33,7 +33,7 @@
 
  <p align="center">
 
-  <video src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/breve-apresentacao-projeto.mp4" alt="Video de apresentação da aplicação"></video>
+  <video src="" alt="Breve apresentação da aplicação"></video>
 </p>
  
 <br> 
@@ -116,10 +116,7 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
   <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/logo-mckinsey.png" alt="Logo McKinsey & Company" width="150" heigth="35"/>](https://www.mckinsey.com.br/)
  </p>
 <br>
- 
-#### Creditos
 
-<br> 
  
 #### Contatos
 
