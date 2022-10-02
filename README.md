@@ -31,7 +31,7 @@
 
  <p align="center">
 
-  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/home1.png" alt="Breve apresentação da aplicação"/>
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/ppt_readme.md_projeto.gif" alt="Breve apresentação da aplicação"/>
 </p>
  
 <br> 
@@ -58,7 +58,7 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
 <p align="center">
 
-  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/kaban-g5.png" alt="kanban do projeto"/>
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/ppt_readme.md_kanban.gif" alt="kanban do projeto" width="1050" heigth="245"/>/>
 </p>
 
 <br/>
