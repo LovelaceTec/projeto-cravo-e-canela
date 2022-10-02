@@ -14,7 +14,6 @@
   - [ONGs Projeto Cravo&Canela](#ongs-projeto-cravo&canela)
   - [O projeto](#o-projeto)
   - [Layout](#layout)
-  - [Publicacao](#publicacao)
   - [Kaban](#kanban) 
   - [Instalacao](#instalacao) 
   - [Tecnologias Frontend](#tecnologias-frontend) 
@@ -48,11 +47,8 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
   - [Figma](https://www.figma.com/file/5Bh3kQpsM3wOOJjP7bu370/Projeto-Consultoria-Cravo-%26-Canela?node-id=27%3A387) 
 
-<br/>
- 
-#### Publicacao
+<br/> 
 
-<br>  
 
 #### Kaban
 
@@ -88,7 +84,7 @@ Criado bash para realizar o deploy do frontend (https://github.com/LovelaceTec/p
 #### Documentacao do Banco de Dados
 
  [<p align="center">
-  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy" width="900" heigth="245"/>](https://www.gama.academy/)
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy" width="900" heigth="175"/>](https://www.gama.academy/)
  </p>
  
  - [SQL - Queries apadrinhamento v1](https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/banco_apadrinhe.sql) 
