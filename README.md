@@ -64,6 +64,7 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 <br/>
 
   - [Projects Board](https://github.com/orgs/LovelaceTec/projects/2/views/1) 
+  - [Estatíticas do desenvolvimento](https://github.com/orgs/LovelaceTec/projects/2/insights) 
 
 <br> 
  
@@ -87,7 +88,7 @@ Criado bash para realizar o deploy do frontend (https://github.com/LovelaceTec/p
 #### Documentacao do Banco de Dados
 
  [<p align="center">
-  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy"/>](https://www.gama.academy/)
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/modelagem_BD.PNG.png" alt="Logo Gama Academy" width="900" heigth="245"/>](https://www.gama.academy/)
  </p>
  
  - [SQL - Queries apadrinhamento v1](https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/SQL/banco_apadrinhe.sql) 
