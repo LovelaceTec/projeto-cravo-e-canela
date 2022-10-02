@@ -58,7 +58,7 @@ Através da aplicação é possível que ONGs cadastrem suas campanhas e causas 
 
 <p align="center">
 
-  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/ppt_readme.md_kanban.gif" alt="kanban do projeto" width="1050" heigth="245"/>/>
+  <img src="https://github.com/LovelaceTec/projeto-cravo-e-canela/blob/main/frontend/assets/ppt_readme.md_kanban.gif" alt="kanban do projeto" width="750" heigth="175"/>
 </p>
 
 <br/>
